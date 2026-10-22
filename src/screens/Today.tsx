@@ -4,7 +4,7 @@ import { catchUp, phaseOf, positionOf, taskFor, weekOf } from '../logic/plan'
 import { statusOf } from '../logic/streak'
 import { useStore } from '../store'
 import { useUi } from '../ui'
-import { ErrorList, Heatmap, Subtasks } from '../components/Bits'
+import { ErrorList, Heatmap, PageHead, Subtasks } from '../components/Bits'
 import { Hero } from '../components/Motivation'
 
 export function Today() {
@@ -18,6 +18,7 @@ export function Today() {
 
   return (
     <>
+      <PageHead title="Olá! 👋" subtitle={fmtDate(d)} />
       <Hero pos={pos} />
 
       {!pos ? (
@@ -37,7 +38,7 @@ export function Today() {
 
           <section className="card">
             <div className="row">
-              <small className="muted">{fmtDate(d)}</small>
+              <small className="eyebrow">Tâche du jour</small>
               {status && <span className={`badge ${status}`}>{status === 'complet' ? 'Complet ✓' : 'Minimum ✓'}</span>}
             </div>
             <h2>{taskFor(pos, settings).title}</h2>

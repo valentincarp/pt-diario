@@ -5,6 +5,7 @@ import { positionOf } from '../logic/plan'
 import { buildIcs } from '../logic/ics'
 import { exportData, parseImport, useStore } from '../store'
 import { saveFile } from '../lib/file'
+import { PageHead } from '../components/Bits'
 
 function DaySelect({ value, onChange, none }: { value: number | null; onChange: (v: number | null) => void; none?: boolean }) {
   return (
@@ -47,6 +48,7 @@ export function Settings() {
 
   return (
     <>
+      <PageHead title="Réglages" />
       <section className="card">
         <h2>Plan</h2>
         <p>

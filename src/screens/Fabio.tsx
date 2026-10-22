@@ -3,7 +3,7 @@ import { fmtDate, today } from '../logic/dates'
 import { nextWeekday, positionOf, weekOf } from '../logic/plan'
 import { useStore } from '../store'
 import { useUi } from '../ui'
-import { ErrorList } from '../components/Bits'
+import { ErrorList, PageHead } from '../components/Bits'
 
 function LessonCard({ l }: { l: Lesson }) {
   const { errors, saveLesson, deleteLesson } = useStore()
@@ -55,6 +55,7 @@ export function Fabio() {
 
   return (
     <>
+      <PageHead title="Cours avec Fábio" subtitle="Prépare, note ce que vous avez vu et les fautes corrigées" />
       <section className="card">
         <h2>Prochain(s) cours</h2>
         {upcoming.map((c) => {

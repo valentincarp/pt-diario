@@ -1,0 +1,1094 @@
+{
+ "persons": [
+  "eu",
+  "tu",
+  "ele / ela",
+  "nós",
+  "eles / elas"
+ ],
+ "tenses": [
+  {
+   "name": "Pretérito perfeito",
+   "weeks": [
+    1,
+    2,
+    12
+   ],
+   "verbs": {
+    "falar": [
+     "falei",
+     "falaste",
+     "falou",
+     "falámos",
+     "falaram"
+    ],
+    "comer": [
+     "comi",
+     "comeste",
+     "comeu",
+     "comemos",
+     "comeram"
+    ],
+    "abrir": [
+     "abri",
+     "abriste",
+     "abriu",
+     "abrimos",
+     "abriram"
+    ],
+    "chegar": [
+     "cheguei",
+     "chegaste",
+     "chegou",
+     "chegámos",
+     "chegaram"
+    ],
+    "ser / ir": [
+     "fui",
+     "foste",
+     "foi",
+     "fomos",
+     "foram"
+    ],
+    "ter": [
+     "tive",
+     "tiveste",
+     "teve",
+     "tivemos",
+     "tiveram"
+    ],
+    "estar": [
+     "estive",
+     "estiveste",
+     "esteve",
+     "estivemos",
+     "estiveram"
+    ],
+    "fazer": [
+     "fiz",
+     "fizeste",
+     "fez",
+     "fizemos",
+     "fizeram"
+    ],
+    "dizer": [
+     "disse",
+     "disseste",
+     "disse",
+     "dissemos",
+     "disseram"
+    ],
+    "trazer": [
+     "trouxe",
+     "trouxeste",
+     "trouxe",
+     "trouxemos",
+     "trouxeram"
+    ],
+    "pôr": [
+     "pus",
+     "puseste",
+     "pôs",
+     "pusemos",
+     "puseram"
+    ],
+    "poder": [
+     "pude",
+     "pudeste",
+     "pôde",
+     "pudemos",
+     "puderam"
+    ],
+    "querer": [
+     "quis",
+     "quiseste",
+     "quis",
+     "quisemos",
+     "quiseram"
+    ],
+    "saber": [
+     "soube",
+     "soubeste",
+     "soube",
+     "soubemos",
+     "souberam"
+    ],
+    "vir": [
+     "vim",
+     "vieste",
+     "veio",
+     "viemos",
+     "vieram"
+    ],
+    "ver": [
+     "vi",
+     "viste",
+     "viu",
+     "vimos",
+     "viram"
+    ]
+   }
+  },
+  {
+   "name": "Pretérito imperfeito",
+   "weeks": [
+    2,
+    12
+   ],
+   "verbs": {
+    "falar": [
+     "falava",
+     "falavas",
+     "falava",
+     "falávamos",
+     "falavam"
+    ],
+    "comer": [
+     "comia",
+     "comias",
+     "comia",
+     "comíamos",
+     "comiam"
+    ],
+    "abrir": [
+     "abria",
+     "abrias",
+     "abria",
+     "abríamos",
+     "abriam"
+    ],
+    "ser": [
+     "era",
+     "eras",
+     "era",
+     "éramos",
+     "eram"
+    ],
+    "ter": [
+     "tinha",
+     "tinhas",
+     "tinha",
+     "tínhamos",
+     "tinham"
+    ],
+    "vir": [
+     "vinha",
+     "vinhas",
+     "vinha",
+     "vínhamos",
+     "vinham"
+    ],
+    "pôr": [
+     "punha",
+     "punhas",
+     "punha",
+     "púnhamos",
+     "punham"
+    ],
+    "estar": [
+     "estava",
+     "estavas",
+     "estava",
+     "estávamos",
+     "estavam"
+    ],
+    "ir": [
+     "ia",
+     "ias",
+     "ia",
+     "íamos",
+     "iam"
+    ]
+   }
+  },
+  {
+   "name": "Futuro simples",
+   "weeks": [
+    4,
+    12
+   ],
+   "verbs": {
+    "falar": [
+     "falarei",
+     "falarás",
+     "falará",
+     "falaremos",
+     "falarão"
+    ],
+    "comer": [
+     "comerei",
+     "comerás",
+     "comerá",
+     "comeremos",
+     "comerão"
+    ],
+    "dizer": [
+     "direi",
+     "dirás",
+     "dirá",
+     "diremos",
+     "dirão"
+    ],
+    "fazer": [
+     "farei",
+     "farás",
+     "fará",
+     "faremos",
+     "farão"
+    ],
+    "trazer": [
+     "trarei",
+     "trarás",
+     "trará",
+     "traremos",
+     "trarão"
+    ],
+    "ser": [
+     "serei",
+     "serás",
+     "será",
+     "seremos",
+     "serão"
+    ],
+    "ir": [
+     "irei",
+     "irás",
+     "irá",
+     "iremos",
+     "irão"
+    ]
+   }
+  },
+  {
+   "name": "Condicional",
+   "weeks": [
+    4,
+    6,
+    12
+   ],
+   "verbs": {
+    "falar": [
+     "falaria",
+     "falarias",
+     "falaria",
+     "falaríamos",
+     "falariam"
+    ],
+    "dizer": [
+     "diria",
+     "dirias",
+     "diria",
+     "diríamos",
+     "diriam"
+    ],
+    "fazer": [
+     "faria",
+     "farias",
+     "faria",
+     "faríamos",
+     "fariam"
+    ],
+    "trazer": [
+     "traria",
+     "trarias",
+     "traria",
+     "traríamos",
+     "trariam"
+    ],
+    "ser": [
+     "seria",
+     "serias",
+     "seria",
+     "seríamos",
+     "seriam"
+    ],
+    "poder": [
+     "poderia",
+     "poderias",
+     "poderia",
+     "poderíamos",
+     "poderiam"
+    ],
+    "gostar": [
+     "gostaria",
+     "gostarias",
+     "gostaria",
+     "gostaríamos",
+     "gostariam"
+    ],
+    "ir": [
+     "iria",
+     "irias",
+     "iria",
+     "iríamos",
+     "iriam"
+    ]
+   }
+  },
+  {
+   "name": "Conjuntivo presente",
+   "weeks": [
+    5,
+    12
+   ],
+   "verbs": {
+    "falar": [
+     "fale",
+     "fales",
+     "fale",
+     "falemos",
+     "falem"
+    ],
+    "comer": [
+     "coma",
+     "comas",
+     "coma",
+     "comamos",
+     "comam"
+    ],
+    "abrir": [
+     "abra",
+     "abras",
+     "abra",
+     "abramos",
+     "abram"
+    ],
+    "ser": [
+     "seja",
+     "sejas",
+     "seja",
+     "sejamos",
+     "sejam"
+    ],
+    "estar": [
+     "esteja",
+     "estejas",
+     "esteja",
+     "estejamos",
+     "estejam"
+    ],
+    "ter": [
+     "tenha",
+     "tenhas",
+     "tenha",
+     "tenhamos",
+     "tenham"
+    ],
+    "ir": [
+     "vá",
+     "vás",
+     "vá",
+     "vamos",
+     "vão"
+    ],
+    "fazer": [
+     "faça",
+     "faças",
+     "faça",
+     "façamos",
+     "façam"
+    ],
+    "poder": [
+     "possa",
+     "possas",
+     "possa",
+     "possamos",
+     "possam"
+    ],
+    "saber": [
+     "saiba",
+     "saibas",
+     "saiba",
+     "saibamos",
+     "saibam"
+    ],
+    "querer": [
+     "queira",
+     "queiras",
+     "queira",
+     "queiramos",
+     "queiram"
+    ],
+    "dar": [
+     "dê",
+     "dês",
+     "dê",
+     "demos",
+     "deem"
+    ],
+    "haver": [
+     "haja",
+     "hajas",
+     "haja",
+     "hajamos",
+     "hajam"
+    ],
+    "dizer": [
+     "diga",
+     "digas",
+     "diga",
+     "digamos",
+     "digam"
+    ],
+    "vir": [
+     "venha",
+     "venhas",
+     "venha",
+     "venhamos",
+     "venham"
+    ]
+   }
+  },
+  {
+   "name": "Conjuntivo imperfeito",
+   "weeks": [
+    6,
+    12
+   ],
+   "verbs": {
+    "falar": [
+     "falasse",
+     "falasses",
+     "falasse",
+     "falássemos",
+     "falassem"
+    ],
+    "comer": [
+     "comesse",
+     "comesses",
+     "comesse",
+     "comêssemos",
+     "comessem"
+    ],
+    "abrir": [
+     "abrisse",
+     "abrisses",
+     "abrisse",
+     "abríssemos",
+     "abrissem"
+    ],
+    "ser / ir": [
+     "fosse",
+     "fosses",
+     "fosse",
+     "fôssemos",
+     "fossem"
+    ],
+    "ter": [
+     "tivesse",
+     "tivesses",
+     "tivesse",
+     "tivéssemos",
+     "tivessem"
+    ],
+    "estar": [
+     "estivesse",
+     "estivesses",
+     "estivesse",
+     "estivéssemos",
+     "estivessem"
+    ],
+    "fazer": [
+     "fizesse",
+     "fizesses",
+     "fizesse",
+     "fizéssemos",
+     "fizessem"
+    ],
+    "poder": [
+     "pudesse",
+     "pudesses",
+     "pudesse",
+     "pudéssemos",
+     "pudessem"
+    ],
+    "saber": [
+     "soubesse",
+     "soubesses",
+     "soubesse",
+     "soubéssemos",
+     "soubessem"
+    ],
+    "querer": [
+     "quisesse",
+     "quisesses",
+     "quisesse",
+     "quiséssemos",
+     "quisessem"
+    ],
+    "vir": [
+     "viesse",
+     "viesses",
+     "viesse",
+     "viéssemos",
+     "viessem"
+    ],
+    "dizer": [
+     "dissesse",
+     "dissesses",
+     "dissesse",
+     "disséssemos",
+     "dissessem"
+    ]
+   }
+  },
+  {
+   "name": "Futuro do conjuntivo",
+   "weeks": [
+    7,
+    12
+   ],
+   "verbs": {
+    "falar": [
+     "falar",
+     "falares",
+     "falar",
+     "falarmos",
+     "falarem"
+    ],
+    "comer": [
+     "comer",
+     "comeres",
+     "comer",
+     "comermos",
+     "comerem"
+    ],
+    "ser / ir": [
+     "for",
+     "fores",
+     "for",
+     "formos",
+     "forem"
+    ],
+    "ter": [
+     "tiver",
+     "tiveres",
+     "tiver",
+     "tivermos",
+     "tiverem"
+    ],
+    "estar": [
+     "estiver",
+     "estiveres",
+     "estiver",
+     "estivermos",
+     "estiverem"
+    ],
+    "fazer": [
+     "fizer",
+     "fizeres",
+     "fizer",
+     "fizermos",
+     "fizerem"
+    ],
+    "poder": [
+     "puder",
+     "puderes",
+     "puder",
+     "pudermos",
+     "puderem"
+    ],
+    "querer": [
+     "quiser",
+     "quiseres",
+     "quiser",
+     "quisermos",
+     "quiserem"
+    ],
+    "saber": [
+     "souber",
+     "souberes",
+     "souber",
+     "soubermos",
+     "souberem"
+    ],
+    "vir": [
+     "vier",
+     "vieres",
+     "vier",
+     "viermos",
+     "vierem"
+    ],
+    "ver": [
+     "vir",
+     "vires",
+     "vir",
+     "virmos",
+     "virem"
+    ],
+    "dizer": [
+     "disser",
+     "disseres",
+     "disser",
+     "dissermos",
+     "disserem"
+    ]
+   }
+  },
+  {
+   "name": "Infinitivo pessoal",
+   "weeks": [
+    8,
+    12
+   ],
+   "verbs": {
+    "falar": [
+     "falar",
+     "falares",
+     "falar",
+     "falarmos",
+     "falarem"
+    ],
+    "fazer": [
+     "fazer",
+     "fazeres",
+     "fazer",
+     "fazermos",
+     "fazerem"
+    ],
+    "sair": [
+     "sair",
+     "saíres",
+     "sair",
+     "sairmos",
+     "saírem"
+    ],
+    "ser": [
+     "ser",
+     "seres",
+     "ser",
+     "sermos",
+     "serem"
+    ],
+    "ter": [
+     "ter",
+     "teres",
+     "ter",
+     "termos",
+     "terem"
+    ],
+    "ir": [
+     "ir",
+     "ires",
+     "ir",
+     "irmos",
+     "irem"
+    ]
+   }
+  },
+  {
+   "name": "Pretérito perfeito composto",
+   "weeks": [
+    9,
+    12
+   ],
+   "verbs": {
+    "fazer": [
+     "tenho feito",
+     "tens feito",
+     "tem feito",
+     "temos feito",
+     "têm feito"
+    ],
+    "dizer": [
+     "tenho dito",
+     "tens dito",
+     "tem dito",
+     "temos dito",
+     "têm dito"
+    ],
+    "escrever": [
+     "tenho escrito",
+     "tens escrito",
+     "tem escrito",
+     "temos escrito",
+     "têm escrito"
+    ],
+    "ver": [
+     "tenho visto",
+     "tens visto",
+     "tem visto",
+     "temos visto",
+     "têm visto"
+    ],
+    "pôr": [
+     "tenho posto",
+     "tens posto",
+     "tem posto",
+     "temos posto",
+     "têm posto"
+    ],
+    "abrir": [
+     "tenho aberto",
+     "tens aberto",
+     "tem aberto",
+     "temos aberto",
+     "têm aberto"
+    ],
+    "ler": [
+     "tenho lido",
+     "tens lido",
+     "tem lido",
+     "temos lido",
+     "têm lido"
+    ],
+    "andar": [
+     "tenho andado",
+     "tens andado",
+     "tem andado",
+     "temos andado",
+     "têm andado"
+    ]
+   }
+  },
+  {
+   "name": "Mais-que-perfeito composto",
+   "weeks": [
+    9,
+    11,
+    12
+   ],
+   "verbs": {
+    "fazer": [
+     "tinha feito",
+     "tinhas feito",
+     "tinha feito",
+     "tínhamos feito",
+     "tinham feito"
+    ],
+    "dizer": [
+     "tinha dito",
+     "tinhas dito",
+     "tinha dito",
+     "tínhamos dito",
+     "tinham dito"
+    ],
+    "escrever": [
+     "tinha escrito",
+     "tinhas escrito",
+     "tinha escrito",
+     "tínhamos escrito",
+     "tinham escrito"
+    ],
+    "ver": [
+     "tinha visto",
+     "tinhas visto",
+     "tinha visto",
+     "tínhamos visto",
+     "tinham visto"
+    ],
+    "pôr": [
+     "tinha posto",
+     "tinhas posto",
+     "tinha posto",
+     "tínhamos posto",
+     "tinham posto"
+    ],
+    "abrir": [
+     "tinha aberto",
+     "tinhas aberto",
+     "tinha aberto",
+     "tínhamos aberto",
+     "tinham aberto"
+    ],
+    "ler": [
+     "tinha lido",
+     "tinhas lido",
+     "tinha lido",
+     "tínhamos lido",
+     "tinham lido"
+    ],
+    "andar": [
+     "tinha andado",
+     "tinhas andado",
+     "tinha andado",
+     "tínhamos andado",
+     "tinham andado"
+    ]
+   }
+  }
+ ],
+ "sentences": [
+  {
+   "weeks": [
+    3,
+    12
+   ],
+   "rule": "Pronoms compléments : place et contractions",
+   "prompt": "Vi o João. → remplace « o João »",
+   "answers": [
+    "Vi-o."
+   ]
+  },
+  {
+   "weeks": [
+    3,
+    12
+   ],
+   "rule": "Pronoms compléments : place et contractions",
+   "prompt": "Não vi a Maria. → remplace « a Maria »",
+   "answers": [
+    "Não a vi."
+   ]
+  },
+  {
+   "weeks": [
+    3,
+    12
+   ],
+   "rule": "Pronoms compléments : place et contractions",
+   "prompt": "Comprei os livros. → remplace « os livros »",
+   "answers": [
+    "Comprei-os."
+   ]
+  },
+  {
+   "weeks": [
+    3,
+    12
+   ],
+   "rule": "Pronoms compléments : place et contractions",
+   "prompt": "Ela comeu a sopa. → remplace « a sopa »",
+   "answers": [
+    "Ela comeu-a."
+   ]
+  },
+  {
+   "weeks": [
+    3,
+    12
+   ],
+   "rule": "Pronoms compléments : place et contractions",
+   "prompt": "Já fiz o jantar. → remplace « o jantar »",
+   "answers": [
+    "Já o fiz."
+   ]
+  },
+  {
+   "weeks": [
+    3,
+    12
+   ],
+   "rule": "Pronoms compléments : place et contractions",
+   "prompt": "Nunca vi esse filme. → remplace « esse filme »",
+   "answers": [
+    "Nunca o vi."
+   ]
+  },
+  {
+   "weeks": [
+    3,
+    12
+   ],
+   "rule": "Pronoms compléments : place et contractions",
+   "prompt": "Quero ver o filme. → remplace « o filme »",
+   "answers": [
+    "Quero vê-lo."
+   ]
+  },
+  {
+   "weeks": [
+    3,
+    12
+   ],
+   "rule": "Pronoms compléments : place et contractions",
+   "prompt": "Vamos fazer o bolo. → remplace « o bolo »",
+   "answers": [
+    "Vamos fazê-lo."
+   ]
+  },
+  {
+   "weeks": [
+    3,
+    12
+   ],
+   "rule": "Pronoms compléments : place et contractions",
+   "prompt": "Telefonei à minha avó. → remplace « à minha avó »",
+   "answers": [
+    "Telefonei-lhe."
+   ]
+  },
+  {
+   "weeks": [
+    3,
+    12
+   ],
+   "rule": "Pronoms compléments : place et contractions",
+   "prompt": "Ele deu-me o livro. → remplace « o livro »",
+   "answers": [
+    "Ele deu-mo."
+   ]
+  },
+  {
+   "weeks": [
+    3,
+    12
+   ],
+   "rule": "Pronoms compléments : place et contractions",
+   "prompt": "Dei o livro ao Pedro. → remplace les deux compléments",
+   "answers": [
+    "Dei-lho."
+   ]
+  },
+  {
+   "weeks": [
+    4,
+    12
+   ],
+   "rule": "Mésoclise (futuro / condicional + pronom)",
+   "prompt": "Eu direi a verdade a ti. → « je te dirai la vérité » avec mésoclise",
+   "answers": [
+    "Dir-te-ei a verdade."
+   ]
+  },
+  {
+   "weeks": [
+    4,
+    12
+   ],
+   "rule": "Mésoclise (futuro / condicional + pronom)",
+   "prompt": "Ele faria isso. → remplace « isso » (mésoclise)",
+   "answers": [
+    "Fá-lo-ia.",
+    "Ele fá-lo-ia."
+   ]
+  },
+  {
+   "weeks": [
+    10,
+    12
+   ],
+   "rule": "Voix passive et se impersonnel",
+   "prompt": "O Governo aprovou a lei. → voix passive",
+   "answers": [
+    "A lei foi aprovada pelo Governo."
+   ]
+  },
+  {
+   "weeks": [
+    10,
+    12
+   ],
+   "rule": "Voix passive et se impersonnel",
+   "prompt": "Os alunos escreveram os textos. → voix passive",
+   "answers": [
+    "Os textos foram escritos pelos alunos."
+   ]
+  },
+  {
+   "weeks": [
+    10,
+    12
+   ],
+   "rule": "Voix passive et se impersonnel",
+   "prompt": "A Câmara vai construir uma ponte. → voix passive",
+   "answers": [
+    "Uma ponte vai ser construída pela Câmara."
+   ]
+  },
+  {
+   "weeks": [
+    10,
+    12
+   ],
+   "rule": "Voix passive et se impersonnel",
+   "prompt": "On parle portugais ici. → se impersonnel",
+   "answers": [
+    "Fala-se português aqui.",
+    "Aqui fala-se português."
+   ]
+  },
+  {
+   "weeks": [
+    10,
+    12
+   ],
+   "rule": "Voix passive et se impersonnel",
+   "prompt": "On vend des maisons. → se impersonnel",
+   "answers": [
+    "Vendem-se casas."
+   ]
+  },
+  {
+   "weeks": [
+    10,
+    12
+   ],
+   "rule": "Voix passive et se impersonnel",
+   "prompt": "Le musée a été ouvert en 1990. → traduis",
+   "answers": [
+    "O museu foi aberto em 1990."
+   ]
+  },
+  {
+   "weeks": [
+    11,
+    12
+   ],
+   "rule": "Discours indirect et concordance des temps",
+   "prompt": "« Estou cansado », disse ele. → discours indirect",
+   "answers": [
+    "Ele disse que estava cansado."
+   ]
+  },
+  {
+   "weeks": [
+    11,
+    12
+   ],
+   "rule": "Discours indirect et concordance des temps",
+   "prompt": "« Comprei um carro », contou o Rui. → discours indirect",
+   "answers": [
+    "O Rui contou que tinha comprado um carro.",
+    "O Rui contou que comprara um carro."
+   ]
+  },
+  {
+   "weeks": [
+    11,
+    12
+   ],
+   "rule": "Discours indirect et concordance des temps",
+   "prompt": "« Vou ao Porto amanhã », disse a Ana. → discours indirect",
+   "answers": [
+    "A Ana disse que ia ao Porto no dia seguinte.",
+    "A Ana disse que iria ao Porto no dia seguinte."
+   ]
+  },
+  {
+   "weeks": [
+    11,
+    12
+   ],
+   "rule": "Discours indirect et concordance des temps",
+   "prompt": "« Farei isso amanhã », prometeu ele. → discours indirect",
+   "answers": [
+    "Ele prometeu que faria isso no dia seguinte."
+   ]
+  },
+  {
+   "weeks": [
+    11,
+    12
+   ],
+   "rule": "Discours indirect et concordance des temps",
+   "prompt": "« Já jantaste? », perguntou-me o pai. → discours indirect",
+   "answers": [
+    "O pai perguntou-me se eu já tinha jantado.",
+    "O pai perguntou-me se já tinha jantado."
+   ]
+  },
+  {
+   "weeks": [
+    11,
+    12
+   ],
+   "rule": "Discours indirect et concordance des temps",
+   "prompt": "« Telefona-me! », pediu-me a mãe. → discours indirect",
+   "answers": [
+    "A mãe pediu-me que lhe telefonasse.",
+    "A mãe pediu-me para lhe telefonar."
+   ]
+  }
+ ]
+}

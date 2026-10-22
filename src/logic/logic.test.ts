@@ -142,6 +142,7 @@ describe('calendrier .ics', () => {
     expect(ev.filter((e) => e.uid.startsWith('bilan-'))).toHaveLength(12)
     expect(ev.find((e) => e.uid === 'bilan-2026-11-15')?.title).toBe('Bilan de phase (semaine 4)')
     expect(ev.find((e) => e.uid === 'jour-2026-11-09')?.title).toContain('Test blanc cette semaine')
+    expect(ev.find((e) => e.uid === 'jour-2026-10-22')).toMatchObject({ time: S.cal.dailyTime, alarm: '-PT0M' })
   })
   it('format RFC 5545 : CRLF, échappement, lignes ≤ 75 octets', () => {
     const txt = buildIcs(
@@ -153,5 +154,30 @@ describe('calendrier .ics', () => {
     expect(txt).toContain('TRIGGER:-PT30M')
     const long = buildIcs(planEvents(S, '2026-10-22'), new Date())
     for (const line of long.split('\r\n')) expect(new TextEncoder().encode(line).length).toBeLessThanOrEqual(75)
+  })
+})
+
+describe('exercices', () => {
+  it('correction tolérante (casse, ponctuation, pronom) mais stricte sur les accents', async () => {
+    const { check } = await import('./exercises')
+    expect(check('  Vi-o ', ['Vi-o.'])).toBe('ok')
+    expect(check('« Dei-lho »', ['Dei-lho.'])).toBe('ok')
+    expect(check('falamos', ['falámos'])).toBe('accents')
+    expect(check('falei', ['falámos'])).toBe('faux')
+    expect(check('', ['x'])).toBe('faux')
+  })
+  it('séance de 10 questions centrée sur le temps de la semaine', async () => {
+    const { buildSession } = await import('./exercises')
+    let seed = 1
+    const rand = () => ((seed = (seed * 16807) % 2147483647) / 2147483647)
+    const q = buildSession(1, [], [], rand)
+    expect(q).toHaveLength(10)
+    expect(q.filter((x) => x.hint === 'Pretérito perfeito').length).toBeGreaterThanOrEqual(5)
+    const fazer = buildSession(1, [], [], rand, 400).find((x) => x.prompt === 'fazer — eu' && x.hint === 'Pretérito perfeito')
+    expect(fazer?.answers).toContain('eu fiz')
+    // semaine 3 : phrases de pronoms + révision du perfeito/imperfeito
+    const s3 = buildSession(3, [], [], rand)
+    expect(s3.some((x) => x.kind === 'phrase')).toBe(true)
+    expect(s3).toHaveLength(10)
   })
 })

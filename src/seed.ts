@@ -122,5 +122,6 @@ export function initialData(): Data {
     weekly: {},
     phases: {},
     shifts: [],
+    texts: [],
   }
 }

@@ -9,15 +9,30 @@ import { Journal } from './screens/Journal'
 import { Fabio } from './screens/Fabio'
 import { Bilans } from './screens/Bilans'
 import { Settings } from './screens/Settings'
+import { Exos } from './screens/Exos'
+import { Plus } from './screens/Plus'
+import { Icon, type IconName } from './components/Icon'
 
-const TABS: [Tab, string, string, () => React.ReactNode][] = [
-  ['today', '☀️', "Aujourd'hui", Today],
-  ['cards', '🃏', 'Cartes', Cards],
-  ['journal', '📕', 'Journal', Journal],
-  ['fabio', '👨‍🏫', 'Fábio', Fabio],
-  ['bilans', '📊', 'Bilans', Bilans],
-  ['settings', '⚙️', 'Réglages', Settings],
+const SCREENS: Record<Tab, () => React.ReactNode> = {
+  today: Today,
+  cards: Cards,
+  exos: Exos,
+  journal: Journal,
+  plus: Plus,
+  fabio: Fabio,
+  bilans: Bilans,
+  settings: Settings,
+}
+
+// Barre du bas : 5 entrées ; Fábio, Bilans et Réglages sont rangés dans « Plus ».
+const NAV: [Tab & IconName, string][] = [
+  ['today', "Aujourd'hui"],
+  ['cards', 'Cartes'],
+  ['exos', 'Exercices'],
+  ['journal', 'Journal'],
+  ['plus', 'Plus'],
 ]
+const UNDER_PLUS: Tab[] = ['fabio', 'bilans', 'settings']
 
 const useHydrated = () => useSyncExternalStore(useStore.persist.onFinishHydration, useStore.persist.hasHydrated)
 
@@ -43,11 +58,17 @@ export function App() {
         <Celebrate />
       </>
     )
-  const Screen = TABS.find((t) => t[0] === tab)![3]
+  const Screen = SCREENS[tab]
+  const active = UNDER_PLUS.includes(tab) ? 'plus' : tab
 
   return (
     <>
       <main>
+        {UNDER_PLUS.includes(tab) && (
+          <button className="ghost back" onClick={() => setTab('plus')}>
+            <Icon name="back" size={18} /> Plus
+          </button>
+        )}
         <Screen />
       </main>
 
@@ -62,15 +83,15 @@ export function App() {
             </button>
           </>
         )}
-        <button className="round" onClick={() => setFab(!fab)} aria-label="Ajout rapide" aria-expanded={fab}>
-          {fab ? '✕' : '+'}
+        <button className={`round ${fab ? 'open' : ''}`} onClick={() => setFab(!fab)} aria-label="Ajout rapide" aria-expanded={fab}>
+          <Icon name="add" size={26} />
         </button>
       </div>
 
       <nav className="tabs">
-        {TABS.map(([id, icon, label]) => (
-          <button key={id} className={tab === id ? 'active' : ''} onClick={() => setTab(id)} aria-current={tab === id} aria-label={label}>
-            <span aria-hidden>{icon}</span>
+        {NAV.map(([id, label]) => (
+          <button key={id} className={active === id ? 'active' : ''} onClick={() => setTab(id)} aria-current={active === id} aria-label={label}>
+            <Icon name={id} />
             <small>{label}</small>
           </button>
         ))}

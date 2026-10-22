@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useStore } from '../store'
 import { useUi } from '../ui'
+import { PageHead } from '../components/Bits'
 
 const norm = (s: string) => s.trim().toLowerCase()
 
@@ -23,13 +24,12 @@ export function Journal() {
     )
 
   return (
+    <>
+    <PageHead title="Journal d'erreurs" subtitle={`${errors.length} fautes notées · trie par règle pour voir ce qui revient`} />
     <section className="card">
-      <div className="row">
-        <h2>Journal d'erreurs</h2>
-        <button className="small" onClick={() => openError()}>
-          + faute
-        </button>
-      </div>
+      <button className="wide" onClick={() => openError()}>
+        + Ajouter une faute
+      </button>
       <div className="row">
         <input type="search" placeholder="Rechercher…" value={q} onChange={(e) => setQ(e.target.value)} />
         <select value={sort} onChange={(e) => setSort(e.target.value as 'date' | 'freq')} aria-label="Tri">
@@ -80,5 +80,6 @@ export function Journal() {
       </table>
       {!shown.length && <p className="muted">Aucune faute trouvée.</p>}
     </section>
+    </>
   )
 }

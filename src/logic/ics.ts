@@ -7,10 +7,10 @@ export type IcsEvent = {
   title: string
   description: string
   date: string
-  /** "HH:MM" ; absent = événement sur la journée entière */
-  time?: string
+  /** "HH:MM", heure locale */
+  time: string
   durationMin?: number
-  /** Valeur TRIGGER de l'alerte : "PT20H" (journée entière) ou "-PT30M" (avant l'heure). */
+  /** Valeur TRIGGER de l'alerte : "-PT0M" (à l'heure) ou "-PT30M" (30 min avant). */
   alarm: string
 }
 
@@ -42,7 +42,6 @@ function fold(line: string) {
   return out.join('\r\n ')
 }
 
-const compact = (date: string) => date.replace(/-/g, '')
 const hm = (t: string) => t.split(':').map(Number)
 
 /** Heure "flottante" (sans fuseau) : l'iPhone l'interprète dans son fuseau local. */
@@ -59,22 +58,12 @@ export function buildIcs(events: IcsEvent[], stamp: Date) {
   const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//PT diario//FR', 'CALSCALE:GREGORIAN', 'X-WR-CALNAME:Portugais']
   for (const e of events) {
     lines.push('BEGIN:VEVENT', `UID:${e.uid}@pt-diario`, `DTSTAMP:${dtstamp}`)
-    if (e.time) {
-      lines.push(`DTSTART:${localStamp(e.date, e.time)}`, `DTEND:${localStamp(e.date, e.time, e.durationMin ?? 30)}`)
-    } else {
-      lines.push(`DTSTART;VALUE=DATE:${compact(e.date)}`, `DTEND;VALUE=DATE:${compact(addDays(e.date, 1))}`)
-    }
+    lines.push(`DTSTART:${localStamp(e.date, e.time)}`, `DTEND:${localStamp(e.date, e.time, e.durationMin ?? 30)}`)
     lines.push(`SUMMARY:${escape(e.title)}`, `DESCRIPTION:${escape(e.description)}`)
     lines.push('BEGIN:VALARM', 'ACTION:DISPLAY', `DESCRIPTION:${escape(e.title)}`, `TRIGGER:${e.alarm}`, 'END:VALARM', 'END:VEVENT')
   }
   lines.push('END:VCALENDAR')
   return lines.map(fold).join('\r\n') + '\r\n'
-}
-
-/** "20:30" → "PT20H30M" : alerte d'un événement journée entière (décalage depuis minuit). */
-const dayTrigger = (time: string) => {
-  const [h, m] = hm(time)
-  return `PT${h}H${m ? `${m}M` : ''}`
 }
 
 /** Événements de `from` jusqu'à la fin de la semaine 12. */
@@ -95,7 +84,10 @@ export function planEvents(s: Settings, from: string): IcsEvent[] {
         title: `${PT_MESSAGES[diffDays(date, s.planStart) % PT_MESSAGES.length]} ${testBlanc}${task.title}`,
         description: `Semaine ${pos.week} — ${w.theme}\n${DAY_NAMES[wd]} :\n${task.subtasks.map((t) => `• ${t}`).join('\n')}`,
         date,
-        alarm: dayTrigger(s.cal.dailyTime),
+        // Événement à heure fixe (pas « journée entière ») : visible à l'heure du rappel dans l'agenda.
+        time: s.cal.dailyTime,
+        durationMin: 30,
+        alarm: '-PT0M',
       })
     }
     if (s.cal.cours) {

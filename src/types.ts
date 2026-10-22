@@ -58,7 +58,7 @@ export type ErrorEntry = {
   wrote: string
   correction: string
   rule: string
-  source: 'jour' | 'cours' | 'manuel'
+  source: 'jour' | 'cours' | 'manuel' | 'exercice'
   lessonId?: string
 }
 
@@ -87,6 +87,9 @@ export type PhaseReview = {
   /** Instantané au moment de l'enregistrement. */
   cardsLearned: number
 }
+/** Texte écrit dans l'appli (écriture du vendredi…), corrigé avec LanguageTool. */
+export type TextEntry = { id: string; date: string; week: number; title: string; body: string }
+
 export type PlanShift = { date: string; fromWeek: number | null; toWeek: number }
 
 export type Data = {
@@ -102,4 +105,5 @@ export type Data = {
   weekly: Record<number, WeeklyReview>
   phases: Record<number, PhaseReview>
   shifts: PlanShift[]
+  texts: TextEntry[]
 }

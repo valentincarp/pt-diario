@@ -1,6 +1,6 @@
 # PT diário — portugais tous les jours
 
-Appli web installable (PWA) qui remplace les carnets papier : tâche du jour issue du plan de 12 semaines, série (streak), rattrapage, cours avec Fábio, journal d'erreurs, cartes de révision (FSRS) et bilans. Les données restent sur l'appareil (IndexedDB) et fonctionnent hors ligne. Les rappels passent par l'appli **Calendrier** du téléphone, grâce à un fichier `.ics`.
+Appli web installable (PWA) qui remplace les carnets papier : tâche du jour issue du plan de 12 semaines, série (streak), rattrapage, exercices auto-corrigés, écriture corrigée par LanguageTool, cours avec Fábio, journal d'erreurs, cartes de révision (FSRS) et bilans. Les données restent sur l'appareil (IndexedDB) et fonctionnent hors ligne. Les rappels passent par l'appli **Calendrier** du téléphone, grâce à un fichier `.ics`.
 
 ## Installation et lancement (sur le Mac)
 
@@ -42,6 +42,18 @@ Règles :
 - L'avancement est enregistré **par texte de sous-tâche**. Si tu renommes une sous-tâche déjà cochée, elle redevient décochée.
 - Après modification : `npm test`, puis redéploie l'appli (voir plus bas).
 
+## Exercices (`src/exercises.json`)
+
+L'onglet **Exercices** propose :
+- **une série de 10 questions** corrigée tout de suite : conjugaison des temps de la semaine (et révision des semaines passées), phrases à transformer (pronoms, voix passive, discours indirect…), traduction de tes cartes, et tes fautes du journal à corriger. La casse et la ponctuation ne comptent pas, les accents si (« Presque : attention aux accents »). Chaque erreur part dans le journal d'erreurs. Le bouton « J'avais juste » annule une erreur si ta réponse était correcte mais non prévue.
+- **l'écriture** : ton texte est enregistré au fur et à mesure, et le bouton « Corriger avec LanguageTool » souligne les fautes (orthographe, grammaire, portugais européen). Tu peux appliquer une suggestion d'un geste ou envoyer la faute au journal. Le texte est envoyé à l'API publique gratuite de languagetool.org, ce qui demande internet. LanguageTool ne connaît pas ton intention : il ne verra pas un présent écrit à la place d'un passé (*visitamos* / *visitámos*).
+
+Sur l'écran Aujourd'hui, les sous-tâches de grammaire ont un bouton « S'entraîner », et celles d'écriture un bouton « Écrire ».
+
+Pour ajouter ou corriger des exercices, modifie `src/exercises.json` :
+- `tenses` : un temps (`name`), les semaines où il est travaillé (`weeks`) et ses verbes, chacun avec 5 formes (eu, tu, ele/ela, nós, eles/elas) ;
+- `sentences` : une consigne (`prompt`), la ou les réponses acceptées (`answers`), la règle (`rule`) et les semaines (`weeks`).
+
 ## Installer l'appli sur l'iPhone
 
 Une PWA doit être servie en **HTTPS** pour fonctionner hors ligne. L'appli n'a pas de serveur : il suffit d'un hébergement de fichiers statiques gratuit. Exemple avec GitHub Pages :
@@ -61,7 +73,7 @@ Les rappels sont des événements du Calendrier iOS : ils arrivent appli fermée
 > Pourquoi pas un import ? Sur iOS, l'app Fichiers et Mail n'affichent pas « Ajouter tout » pour un fichier qui contient plusieurs événements. L'abonnement contourne ce problème.
 
 Le calendrier contient :
-- **un événement par jour** (journée entière), avec en titre la tâche du jour et un message en portugais, et une alerte à `dailyTime`. Le lundi des semaines 4, 8 et 12, le titre annonce le test blanc ;
+- **un événement par jour à heure fixe** (`dailyTime`, 12 h), avec en titre la tâche du jour et un message en portugais, et une alerte à l'heure. Le lundi des semaines 4, 8 et 12, le titre annonce le test blanc ;
 - **les cours avec Fábio**, avec une alerte `coursBefore` minutes avant et ce qu'il faut préparer ;
 - **le bilan du dimanche** à `bilanTime`. Les semaines 4, 8 et 12, c'est le bilan de phase.
 
@@ -96,11 +108,13 @@ Réglages → **Exporter mes données (JSON)**. Le fichier contient tout : plan 
 
 ```
 src/plan.json        le plan (modifiable)
+src/exercises.json   conjugaisons et phrases des exercices (modifiable)
 src/calendar.json    horaires et début du calendrier publié (et réglages de départ de l'appli)
 src/types.ts         types du plan et des données
-src/logic/           logique pure et testée : dates, plan, streak, cards, ics (+ logic.test.ts)
+src/logic/           logique pure et testée : dates, plan, streak, cards, exercises, ics (+ logic.test.ts)
 src/store.ts         état (zustand) sauvegardé dans IndexedDB, export/import
 src/seed.ts          données de départ (paquet S1 + carnet)
-src/screens/         Aujourd'hui, Cartes (+ session), Journal, Fábio, Bilans, Réglages
+src/screens/         Aujourd'hui, Cartes (+ session), Exercices (+ écriture), Journal, Plus, Fábio, Bilans, Réglages
+src/lib/             LanguageTool, enregistrement de fichiers
 src/components/      modales (faute, carte), sous-tâches, calendrier de la série, bandeau de motivation
 ```

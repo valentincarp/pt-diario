@@ -6,7 +6,7 @@ import { today } from './logic/dates'
 import { emptyFsrs, grade } from './logic/cards'
 import { isAnki, isDone, positionOf, shiftedStart, taskFor, taskKey } from './logic/plan'
 import { initialData } from './seed'
-import type { CardItem, Data, DayLog, ErrorEntry, Lesson, PhaseReview, Pos, Settings, WeeklyReview } from './types'
+import type { CardItem, Data, DayLog, ErrorEntry, Lesson, PhaseReview, Pos, Settings, TextEntry, WeeklyReview } from './types'
 
 const uid = () => crypto.randomUUID()
 
@@ -15,7 +15,7 @@ type Actions = {
   updateDay: (date: string, patch: Partial<Pick<DayLog, 'minutes' | 'notes'>>) => void
   addMinutes: (date: string, minutes: number) => void
   validateCards: () => void
-  saveError: (e: Omit<ErrorEntry, 'id'> & { id?: string }) => void
+  saveError: (e: Omit<ErrorEntry, 'id'> & { id?: string }) => string
   deleteError: (id: string) => void
   saveLesson: (l: Omit<Lesson, 'id'> & { id?: string }) => string
   deleteLesson: (id: string) => void
@@ -27,6 +27,8 @@ type Actions = {
   setPhase: (phase: number, p: PhaseReview) => void
   setSettings: (patch: Partial<Settings>) => void
   shiftPlan: (toWeek: number) => void
+  saveText: (t: Omit<TextEntry, 'id'> & { id?: string }) => string
+  deleteText: (id: string) => void
   replaceData: (d: Data) => void
 }
 
@@ -86,12 +88,13 @@ export const useStore = create<Store>()(
           }
         }),
 
-      saveError: (e) =>
+      saveError: (e) => {
+        const id = e.id ?? uid()
         setState((s) =>
-          e.id
-            ? { errors: s.errors.map((x) => (x.id === e.id ? { ...x, ...e, id: x.id } : x)) }
-            : { errors: [{ ...e, id: uid() }, ...s.errors] },
-        ),
+          e.id ? { errors: s.errors.map((x) => (x.id === id ? { ...x, ...e, id } : x)) } : { errors: [{ ...e, id }, ...s.errors] },
+        )
+        return id
+      },
       deleteError: (id) => setState((s) => ({ errors: s.errors.filter((e) => e.id !== id) })),
 
       saveLesson: (l) => {
@@ -144,6 +147,13 @@ export const useStore = create<Store>()(
           }
         }),
 
+      saveText: (t) => {
+        const id = t.id ?? uid()
+        setState((s) => ({ texts: t.id ? s.texts.map((x) => (x.id === id ? { ...x, ...t, id } : x)) : [{ ...t, id }, ...s.texts] }))
+        return id
+      },
+      deleteText: (id) => setState((s) => ({ texts: s.texts.filter((t) => t.id !== id) })),
+
       replaceData: (d) => setState(d),
     }),
     { name: 'pt-diario', version: 1, storage: createJSONStorage(() => idbStorage) },
@@ -152,8 +162,8 @@ export const useStore = create<Store>()(
 
 /** Partie « données » du store (sans les fonctions), pour l'export. */
 export function exportData(): Data {
-  const { version, settings, days, tasks, errors, lessons, decks, cards, reviews, weekly, phases, shifts } = useStore.getState()
-  return { version, settings, days, tasks, errors, lessons, decks, cards, reviews, weekly, phases, shifts }
+  const { version, settings, days, tasks, errors, lessons, decks, cards, reviews, weekly, phases, shifts, texts } = useStore.getState()
+  return { version, settings, days, tasks, errors, lessons, decks, cards, reviews, weekly, phases, shifts, texts }
 }
 
 /** Contrôle minimal d'un fichier importé avant de remplacer les données. */
@@ -167,5 +177,5 @@ export function parseImport(text: string): Data {
     arrays.every((k) => Array.isArray(d[k])) &&
     objects.every((k) => d[k] && typeof d[k] === 'object')
   if (!ok) throw new Error("Ce fichier n'est pas une sauvegarde valide de l'appli.")
-  return d as Data
+  return { ...d, texts: Array.isArray(d.texts) ? d.texts : [] } as Data // texts : absent des sauvegardes d'avant les exercices
 }

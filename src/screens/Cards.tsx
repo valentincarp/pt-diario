@@ -4,6 +4,7 @@ import { today } from '../logic/dates'
 import { aheadQueue, dailyQueue, nothingLeft, SESSION_SECONDS, stats } from '../logic/cards'
 import { useStore } from '../store'
 import { useUi } from '../ui'
+import { PageHead } from '../components/Bits'
 
 const GRADES: [Grade, string][] = [
   [Rating.Again, 'À revoir'],
@@ -140,6 +141,7 @@ export function Cards() {
 
   return (
     <>
+      <PageHead title="Cartes" subtitle="Répétition espacée : chaque carte revient au bon moment" />
       <section className="card">
         <div className="stats">
           <div>

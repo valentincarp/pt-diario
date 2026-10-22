@@ -4,11 +4,31 @@ import { statusOf } from '../logic/streak'
 import { useStore } from '../store'
 import { useUi } from '../ui'
 import type { ErrorEntry, Pos } from '../types'
+import { Icon } from './Icon'
 
-/** Sous-tâches cochables d'une tâche du plan. */
+/** En-tête d'écran : titre, sous-titre, bouton retour optionnel. */
+export function PageHead({ title, subtitle, onBack }: { title: string; subtitle?: string; onBack?: () => void }) {
+  return (
+    <header className="page-head">
+      {onBack && (
+        <button className="ghost back" onClick={onBack}>
+          <Icon name="back" size={18} /> Retour
+        </button>
+      )}
+      <h1>{title}</h1>
+      {subtitle && <p className="muted">{subtitle}</p>}
+    </header>
+  )
+}
+
+const isGrammar = (label: string) => /^Grammaire|^Connecteurs|^Collocations/.test(label)
+const isWriting = (label: string) =>
+  /^(Écri|Courriel|Lettre|Résumé|Synthèse|Texte argumentatif|Rapporter une conversation)|production écrite/.test(label)
+
+/** Sous-tâches cochables d'une tâche du plan, avec un raccourci vers l'outil qui sert à la faire. */
 export function Subtasks({ pos }: { pos: Pos }) {
   const { settings, tasks, toggleSubtask } = useStore()
-  const setSession = useUi((u) => u.setSession)
+  const { setSession, setTab, openWriting } = useUi()
   const checked = tasks[taskKey(pos)]?.checked ?? []
   return (
     <ul className="subtasks">
@@ -18,11 +38,20 @@ export function Subtasks({ pos }: { pos: Pos }) {
             <input type="checkbox" checked={checked.includes(label)} onChange={() => toggleSubtask(pos, label)} />
             <span>{label}</span>
           </label>
-          {isAnki(label) && !checked.includes(label) && (
-            <button className="small" onClick={() => setSession(true)}>
-              Lancer
-            </button>
-          )}
+          {!checked.includes(label) &&
+            (isAnki(label) ? (
+              <button className="small" onClick={() => setSession(true)}>
+                Réviser
+              </button>
+            ) : isGrammar(label) ? (
+              <button className="small secondary" onClick={() => setTab('exos')}>
+                S'entraîner
+              </button>
+            ) : isWriting(label) ? (
+              <button className="small secondary" onClick={() => openWriting('new')}>
+                Écrire
+              </button>
+            ) : null)}
         </li>
       ))}
     </ul>

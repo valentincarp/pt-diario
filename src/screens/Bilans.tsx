@@ -4,6 +4,7 @@ import { learnedCount } from '../logic/cards'
 import { isPhaseWeek, phaseOf, positionOf, weekOf } from '../logic/plan'
 import { plan, type PhaseReview, type WeeklyReview } from '../types'
 import { useStore } from '../store'
+import { PageHead } from '../components/Bits'
 
 const hours = (min: number) => `${(min / 60).toLocaleString('fr-FR', { maximumFractionDigits: 1 })} h`
 
@@ -46,6 +47,7 @@ export function Bilans() {
 
   return (
     <>
+      <PageHead title="Bilans" subtitle="Chaque dimanche, et à la fin de chaque phase" />
       <section className="card">
         <div className="row">
           <h2>Bilan de la semaine</h2>
