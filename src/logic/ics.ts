@@ -14,7 +14,7 @@ export type IcsEvent = {
   alarm: string
 }
 
-const PT_MESSAGES = [
+export const PT_MESSAGES = [
   'Vamos lá!',
   'Força!',
   'Hoje é dia de português.',

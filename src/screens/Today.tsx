@@ -1,10 +1,11 @@
 import { DAY_KEYS, DAY_NAMES } from '../types'
 import { fmtDate, today, weekdayIdx } from '../logic/dates'
 import { catchUp, phaseOf, positionOf, taskFor, weekOf } from '../logic/plan'
-import { bestStreak, currentStreak, statusOf } from '../logic/streak'
+import { statusOf } from '../logic/streak'
 import { useStore } from '../store'
 import { useUi } from '../ui'
 import { ErrorList, Heatmap, Subtasks } from '../components/Bits'
+import { Hero } from '../components/Motivation'
 
 export function Today() {
   const { settings, days, tasks, errors, updateDay } = useStore()
@@ -17,16 +18,7 @@ export function Today() {
 
   return (
     <>
-      <section className="card streak">
-        <div>
-          <strong className="big">🔥 {currentStreak(d, days, tasks)}</strong> jour(s) d'affilée
-          <small> · record {bestStreak(days, tasks)}</small>
-        </div>
-        <Heatmap />
-        <small className="legend">
-          <span className="cell vide" /> rien <span className="cell minimum" /> minimum <span className="cell complet" /> complet
-        </small>
-      </section>
+      <Hero pos={pos} />
 
       {!pos ? (
         <section className="card">
@@ -108,6 +100,14 @@ export function Today() {
           ))}
         </section>
       )}
+
+      <section className="card">
+        <h2>Ton parcours</h2>
+        <Heatmap />
+        <small className="legend">
+          <span className="cell vide" /> rien <span className="cell minimum" /> minimum <span className="cell complet" /> complet
+        </small>
+      </section>
     </>
   )
 }

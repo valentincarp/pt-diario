@@ -66,7 +66,13 @@ export function Session() {
           Terminer
         </button>
       </header>
-      {validated && <p className="badge complet">✓ Cartes du jour validées : la série est sauvée</p>}
+      <div className="progress" aria-hidden>
+        <span style={{ width: `${Math.min(100, (100 * elapsed) / SESSION_SECONDS)}%` }} />
+      </div>
+      <small className="muted">
+        {done} carte{done > 1 ? 's' : ''} révisée{done > 1 ? 's' : ''}
+        {validated ? ' · ✓ cartes du jour validées, série sauvée' : ` · encore ${mmss(Math.max(0, SESSION_SECONDS - elapsed))} pour valider`}
+      </small>
 
       {card ? (
         <div className="flash">

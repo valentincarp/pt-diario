@@ -1,12 +1,9 @@
 import { emptyFsrs } from './logic/cards'
+import calendarConfig from './calendar.json'
 import type { CardItem, Data, ErrorEntry, Settings } from './types'
 
-export const defaultSettings: Settings = {
-  planStart: '2026-10-19',
-  cours1: { weekday: 2, time: '18:00' },
-  cours2: { weekday: null, time: '18:00' },
-  cal: { daily: true, dailyTime: '20:00', cours: true, coursBefore: 30, bilan: true, bilanTime: '19:00' },
-}
+// Réglages de départ = ceux du calendrier publié (src/calendar.json), pour rester cohérents.
+export const defaultSettings = calendarConfig as Settings
 
 const card = (deckId: string, i: number, front: string, back: string, note = ''): CardItem => ({
   id: `${deckId}-${i}`,

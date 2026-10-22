@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { DAY_NAMES, plan, type Settings as S } from '../types'
+import { DAY_NAMES, plan } from '../types'
 import { fmtDate, iso, today } from '../logic/dates'
 import { positionOf } from '../logic/plan'
-import { buildIcs, planEvents } from '../logic/ics'
+import { buildIcs } from '../logic/ics'
 import { exportData, parseImport, useStore } from '../store'
 import { saveFile } from '../lib/file'
 
@@ -23,10 +23,8 @@ export function Settings() {
   const { settings, shifts, setSettings, shiftPlan, replaceData } = useStore()
   const current = positionOf(today(), settings.planStart)?.week ?? null
   const [target, setTarget] = useState(current ?? 1)
-  const cal = settings.cal
-  const setCal = (patch: Partial<S['cal']>) => setSettings({ cal: { ...cal, ...patch } })
-
-  const exportIcs = () => saveFile('portugais.ics', buildIcs(planEvents(settings, today()), new Date()), 'text/calendar')
+  // webcal:// ouvre directement l'abonnement dans l'appli Calendrier.
+  const subscribeUrl = new URL('calendrier.ics', location.href).href.replace(/^https?:/, 'webcal:')
   const testIcs = () => {
     const at = new Date(Date.now() + 5 * 60_000)
     const time = at.toTimeString().slice(0, 5)
@@ -86,7 +84,10 @@ export function Settings() {
             ))}
           </ul>
         )}
-        <p className="muted">Après un décalage, regénère le calendrier ci-dessous.</p>
+        <p className="muted">
+          Après un décalage, mets aussi <code>planStart</code> à <b>{settings.planStart}</b> dans <code>src/calendar.json</code> et lance{' '}
+          <code>npm run deploy</code> : le calendrier abonné suivra.
+        </p>
       </section>
 
       <section className="card">
@@ -108,28 +109,21 @@ export function Settings() {
       <section className="card">
         <h2>Rappels (calendrier du téléphone)</h2>
         <p className="muted">
-          Les rappels passent par l'appli Calendrier : ils arrivent même appli fermée et hors ligne. Importe le fichier dans un calendrier dédié
-          « Portugais » (voir le README).
+          Abonne ton iPhone au calendrier publié avec l'appli : les rappels arrivent même appli fermée, et il se met à jour tout seul.
         </p>
-        <label className="check">
-          <input type="checkbox" checked={cal.daily} onChange={(e) => setCal({ daily: e.target.checked })} />
-          <span>Tâche du jour, alerte à</span>
-          <input type="time" value={cal.dailyTime} onChange={(e) => setCal({ dailyTime: e.target.value })} />
-        </label>
-        <label className="check">
-          <input type="checkbox" checked={cal.cours} onChange={(e) => setCal({ cours: e.target.checked })} />
-          <span>Cours avec Fábio, alerte</span>
-          <input type="number" min={0} value={cal.coursBefore} onChange={(e) => setCal({ coursBefore: Number(e.target.value) || 0 })} />
-          <span>min avant</span>
-        </label>
-        <label className="check">
-          <input type="checkbox" checked={cal.bilan} onChange={(e) => setCal({ bilan: e.target.checked })} />
-          <span>Bilan du dimanche à</span>
-          <input type="time" value={cal.bilanTime} onChange={(e) => setCal({ bilanTime: e.target.value })} />
-        </label>
-        <button className="wide" onClick={exportIcs}>
-          📅 Générer / regénérer le calendrier (.ics)
-        </button>
+        <a className="wide button" href={subscribeUrl}>
+          📅 S'abonner au calendrier
+        </a>
+        <ol className="muted small-list">
+          <li>Touche « S'abonner », puis encore « S'abonner ».</li>
+          <li>
+            <b>Désactive « Supprimer les alertes »</b>, sinon aucune notification.
+          </li>
+          <li>Touche « Ajouter ».</li>
+        </ol>
+        <p className="muted">
+          Horaires et date de début du calendrier : fichier <code>src/calendar.json</code> du dépôt, puis <code>npm run deploy</code>.
+        </p>
         <button className="wide secondary" onClick={testIcs}>
           Tester la notification (événement dans 5 min)
         </button>

@@ -2,6 +2,7 @@ import { useEffect, useState, useSyncExternalStore } from 'react'
 import { useStore } from './store'
 import { useUi, type Tab } from './ui'
 import { Modals } from './components/Modals'
+import { Celebrate } from './components/Motivation'
 import { Today } from './screens/Today'
 import { Cards, Session } from './screens/Cards'
 import { Journal } from './screens/Journal'
@@ -34,7 +35,14 @@ export function App() {
   }, [tab])
 
   if (!hydrated) return null
-  if (session) return <Session />
+  // Celebrate reste monté pendant la session, pour fêter la validation des cartes.
+  if (session)
+    return (
+      <>
+        <Session />
+        <Celebrate />
+      </>
+    )
   const Screen = TABS.find((t) => t[0] === tab)![3]
 
   return (
@@ -68,6 +76,7 @@ export function App() {
         ))}
       </nav>
       <Modals />
+      <Celebrate />
     </>
   )
 }

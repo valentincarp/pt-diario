@@ -54,26 +54,29 @@ Une PWA doit être servie en **HTTPS** pour fonctionner hors ligne. L'appli n'a 
 
 Pour un essai rapide sans hébergement, ouvre l'adresse « Network » affichée par `npm run dev` dans Safari, avec le téléphone sur le même Wi-Fi. Sans HTTPS, ce mode ne fonctionne pas hors ligne : il sert juste à tester.
 
-## Notifications : le calendrier `.ics`
+## Notifications : abonnement au calendrier
 
-Les rappels sont des événements du Calendrier iOS. Ils arrivent donc appli fermée, hors ligne, sans serveur.
+Les rappels sont des événements du Calendrier iOS : ils arrivent appli fermée et hors ligne, sans serveur. À chaque `npm run build` ou `npm run deploy`, un fichier `calendrier.ics` est généré à partir de `src/plan.json` et `src/calendar.json`, puis publié avec le site. L'iPhone s'y **abonne** : les 12 semaines sont ajoutées d'un coup, sans doublons, et les mises à jour arrivent toutes seules.
 
-Le fichier contient, de la date du jour jusqu'à la fin de la semaine 12 :
-- **un événement par jour** (journée entière), avec en titre la tâche du jour et un message en portugais, et une alerte à 20 h (réglable). Le lundi des semaines 4, 8 et 12, le titre annonce le test blanc ;
-- **les cours avec Fábio** : mercredi à 18 h par défaut, avec une alerte 30 min avant et ce qu'il faut préparer. Le cours 2 apparaît s'il est réglé ;
-- **le bilan du dimanche** à 19 h. Les semaines 4, 8 et 12, c'est le bilan de phase.
+> Pourquoi pas un import ? Sur iOS, l'app Fichiers et Mail n'affichent pas « Ajouter tout » pour un fichier qui contient plusieurs événements. L'abonnement contourne ce problème.
 
-**Première importation**
-1. Dans l'appli Calendrier : Calendriers → Ajouter un calendrier → nomme-le **Portugais**.
-2. Dans PT diário : Réglages → **Générer / regénérer le calendrier (.ics)** → Enregistrer dans Fichiers.
-3. Dans l'appli Fichiers, touche `portugais.ics` → **Ajouter tout** → choisis le calendrier **Portugais**.
-4. Vérifie dans Réglages iPhone → Notifications → Calendrier que les notifications sont autorisées.
-5. Le bouton **Tester la notification** crée un événement dans 5 min. Importe-le de la même façon.
+Le calendrier contient :
+- **un événement par jour** (journée entière), avec en titre la tâche du jour et un message en portugais, et une alerte à `dailyTime`. Le lundi des semaines 4, 8 et 12, le titre annonce le test blanc ;
+- **les cours avec Fábio**, avec une alerte `coursBefore` minutes avant et ce qu'il faut préparer ;
+- **le bilan du dimanche** à `bilanTime`. Les semaines 4, 8 et 12, c'est le bilan de phase.
 
-**Après un décalage du plan ou un changement d'horaire**
-Supprime le calendrier Portugais (Calendrier → Calendriers → ⓘ → Supprimer le calendrier), recrée-le, puis importe le nouveau fichier. Si tu importes par-dessus sans supprimer, les événements apparaîtront en double.
+**S'abonner (une seule fois)**
+1. Dans PT diário : Réglages → **S'abonner au calendrier**. iOS propose « S'abonner » : accepte.
+2. **Désactive « Supprimer les alertes »**. Sinon, aucune notification.
+3. Touche « Ajouter ». Le calendrier apparaît dans l'app Calendrier.
+4. Le bouton **Tester la notification** crée un seul événement dans 5 min. Celui-là s'importe normalement (Fichiers → Ajouter au calendrier).
 
-Limite : un calendrier ne sait pas si tu as déjà travaillé. Il n'y a donc pas de rappel « Série en danger ». Le rappel de 20 h tombe tous les jours.
+Tu peux supprimer l'ancien calendrier « Portugais » créé à la main : il ne sert plus.
+
+**Changer les horaires ou décaler le plan**
+Modifie `src/calendar.json` (`planStart` = lundi de la semaine 1, jours de cours de 0 = lundi à 6 = dimanche, heures `"HH:MM"`), puis lance `npm run deploy`. L'iPhone recharge le calendrier tout seul (pour forcer : Calendrier → Calendriers → tirer vers le bas). Quand tu décales le plan dans l'appli, l'écran Réglages t'indique la nouvelle valeur de `planStart` à recopier.
+
+Limite : un calendrier ne sait pas si tu as déjà travaillé. Il n'y a donc pas de rappel « Série en danger ». Le rappel du soir tombe tous les jours.
 
 ## Sauvegarde et changement d'appareil
 
@@ -93,10 +96,11 @@ Réglages → **Exporter mes données (JSON)**. Le fichier contient tout : plan 
 
 ```
 src/plan.json        le plan (modifiable)
+src/calendar.json    horaires et début du calendrier publié (et réglages de départ de l'appli)
 src/types.ts         types du plan et des données
 src/logic/           logique pure et testée : dates, plan, streak, cards, ics (+ logic.test.ts)
 src/store.ts         état (zustand) sauvegardé dans IndexedDB, export/import
 src/seed.ts          données de départ (paquet S1 + carnet)
 src/screens/         Aujourd'hui, Cartes (+ session), Journal, Fábio, Bilans, Réglages
-src/components/      modales (faute, carte), sous-tâches, calendrier de la série
+src/components/      modales (faute, carte), sous-tâches, calendrier de la série, bandeau de motivation
 ```
