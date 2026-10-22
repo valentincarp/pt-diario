@@ -1,0 +1,199 @@
+{
+  "routine": {
+    "lun": "Grammaire de la semaine + Anki 10 min + 1 article RTP Notícias (rtp.pt/noticias)",
+    "mar": "Écoute active (transcrire 2 min) + shadowing 5 min + Anki",
+    "mer": "Cours 1 avec Fábio",
+    "jeu": "Lecture + carnet de mots + Anki",
+    "ven": "Écriture (texte de 150-250 mots) + relecture LanguageTool",
+    "sam": "Appel famille sur un thème préparé + mémo vocal 2 min",
+    "dim": "Film/série en VO + bilan de la semaine",
+    "cours2": "Cours 2 (jour configurable) : correction du texte de la semaine"
+  },
+  "phases": [
+    { "n": 1, "title": "Consolider le B1", "weeks": [1, 4] },
+    { "n": 2, "title": "Le subjonctif et le B2", "weeks": [5, 8] },
+    { "n": 3, "title": "Registre formel et littérature", "weeks": [9, 12] }
+  ],
+  "weeks": [
+    {
+      "n": 1,
+      "theme": "Pretérito perfeito",
+      "objective": "Raconter une action terminée sans faute sur les irréguliers (fazer, ter, estar, pôr, poder, ir/ser).",
+      "days": {
+        "lun": { "title": "Perfeito régulier et irrégulier", "subtasks": ["Grammaire : perfeito régulier et irrégulier (Gramática Ativa 1)", "Anki 10 min", "1 article RTP Notícias"] },
+        "mar": { "title": "Écoute Practice Portuguese", "subtasks": ["Écoute Practice Portuguese, transcrire 2 min", "Shadowing 5 min", "Anki 10 min"] },
+        "mer": { "title": "Cours 1 — raconter tes dernières vacances au perfeito", "subtasks": ["Préparer : tes dernières vacances au perfeito", "Cours avec Fábio + fiche remplie"] },
+        "jeu": { "title": "Lecture graduée B1", "subtasks": ["Lecture graduée B1", "Carnet de mots", "Anki 10 min"] },
+        "ven": { "title": "Écriture « Mon dernier été » (150 mots)", "subtasks": ["Écrire « Mon dernier été » (150 mots)", "Relecture LanguageTool"] },
+        "sam": { "title": "Appel famille : raconter ta semaine au perfeito", "subtasks": ["Appel famille : raconter ta semaine au perfeito", "Mémo vocal 2 min (à garder : enregistrement de départ)"] },
+        "dim": { "title": "A Gaiola Dourada (1re moitié) + bilan", "subtasks": ["Film A Gaiola Dourada (1re moitié)", "Bilan de la semaine"] },
+        "cours2": { "title": "Cours 2 — correction du texte + récit au passé", "subtasks": ["Cours 2 : correction du texte + récit au passé"] }
+      }
+    },
+    {
+      "n": 2,
+      "theme": "Imperfeito et contraste avec le perfeito",
+      "objective": "Décrire le passé (imperfeito) et y placer des actions (perfeito).",
+      "days": {
+        "lun": { "title": "Imperfeito + contraste", "subtasks": ["Grammaire : imperfeito + contraste avec le perfeito", "Anki 10 min", "1 article RTP Notícias"] },
+        "mar": { "title": "Écoute + shadowing", "subtasks": ["Écoute, transcrire 2 min", "Shadowing 5 min", "Anki 10 min"] },
+        "mer": { "title": "Cours 1 — souvenir d'enfance (quando era pequeno...)", "subtasks": ["Préparer : un souvenir d'enfance (quando era pequeno...)", "Cours avec Fábio + fiche remplie"] },
+        "jeu": { "title": "2 articles RTP : de repente, entretanto, costumava", "subtasks": ["2 articles RTP : repérer de repente, entretanto, costumava", "Carnet de mots", "Anki 10 min"] },
+        "ven": { "title": "Écriture : un souvenir d'enfance (150-200 mots)", "subtasks": ["Écrire un souvenir d'enfance (150-200 mots)", "Relecture LanguageTool"] },
+        "sam": { "title": "Appel famille : « Comment c'était quand tu étais jeune au Portugal ? »", "subtasks": ["Appel famille : « Comment c'était quand tu étais jeune au Portugal ? »", "Mémo vocal 2 min"] },
+        "dim": { "title": "A Gaiola Dourada (fin) + bilan", "subtasks": ["Film A Gaiola Dourada (fin)", "Bilan de la semaine"] },
+        "cours2": { "title": "Cours 2 — correction + exercices de contraste", "subtasks": ["Cours 2 : correction + exercices de contraste"] }
+      }
+    },
+    {
+      "n": 3,
+      "theme": "Pronoms compléments et expressions idiomatiques",
+      "objective": "Remplacer un nom par o, a, lhe à la bonne place (vi-o, não o vi, dá-mo).",
+      "days": {
+        "lun": { "title": "Pronoms o, a, lhe et contractions", "subtasks": ["Grammaire : o, a, lhe, place du pronom, contractions mo, lho", "Anki 10 min"] },
+        "mar": { "title": "Écoute + 5 expressions idiomatiques", "subtasks": ["Écoute + shadowing", "5 expressions idiomatiques en cartes", "Anki 10 min"] },
+        "mer": { "title": "Cours 1 — simulation magasin/restaurant avec pronoms", "subtasks": ["Préparer : simulation magasin/restaurant avec pronoms", "Cours avec Fábio + fiche remplie"] },
+        "jeu": { "title": "Lecture graduée + 5 expressions idiomatiques", "subtasks": ["Lecture graduée", "5 autres expressions idiomatiques", "Anki 10 min"] },
+        "ven": { "title": "Courriel informel à un proche (150 mots)", "subtasks": ["Courriel informel à un proche (150 mots, 2 expressions idiomatiques)", "Relecture LanguageTool"] },
+        "sam": { "title": "Appel famille : placer 3 expressions idiomatiques", "subtasks": ["Appel famille : placer 3 expressions idiomatiques", "Mémo vocal 2 min"] },
+        "dim": { "title": "1 épisode de série en VO + bilan", "subtasks": ["1 épisode de série en VO", "Bilan de la semaine"] },
+        "cours2": { "title": "Cours 2 — correction du courriel + pronoms", "subtasks": ["Cours 2 : correction du courriel + exercices de pronoms"] }
+      }
+    },
+    {
+      "n": 4,
+      "theme": "Futuro, condicional, bilan de phase",
+      "objective": "Parler de projets et d'hypothèses simples ; réussir le test blanc DEPLE (B1).",
+      "days": {
+        "lun": { "title": "Futuro simples, condicional, mésoclise", "subtasks": ["Grammaire : futuro simples, condicional, mésoclise (dir-te-ei)", "Anki 10 min"] },
+        "mar": { "title": "Expresso da Manhã + connecteurs", "subtasks": ["Podcast Expresso da Manhã", "Connecteurs : no entanto, contudo, ou seja, aliás", "Anki 10 min"] },
+        "mer": { "title": "Cours 1 — « O que farias se... ? » + projets d'avenir", "subtasks": ["Préparer : « O que farias se... ? » + projets d'avenir", "Cours avec Fábio + fiche remplie"] },
+        "jeu": { "title": "Article + test blanc DEPLE (compréhension écrite)", "subtasks": ["1 article", "Test blanc DEPLE : compréhension écrite", "Anki 10 min"] },
+        "ven": { "title": "Test blanc DEPLE (production écrite)", "subtasks": ["Test blanc DEPLE : production écrite"] },
+        "sam": { "title": "Appel famille : tes projets pour l'an prochain", "subtasks": ["Appel famille : tes projets pour l'an prochain", "Mémo vocal 2 min"] },
+        "dim": { "title": "Bilan de phase : comparer texte et mémo S1 / S4", "subtasks": ["Comparer texte et mémo de S1 et S4", "Bilan de phase"] },
+        "cours2": { "title": "Cours 2 — correction du test blanc + oral DEPLE simulé", "subtasks": ["Cours 2 : correction du test blanc + oral DEPLE simulé"] }
+      }
+    },
+    {
+      "n": 5,
+      "theme": "Conjuntivo presente",
+      "objective": "Souhait, doute, nécessité (espero que, duvido que, é importante que).",
+      "days": {
+        "lun": { "title": "Conjuntivo presente", "subtasks": ["Grammaire : conjuntivo presente (Gramática Ativa 2)", "Anki 10 min"] },
+        "mar": { "title": "Expresso da Manhã : repérer les subjonctifs", "subtasks": ["Expresso da Manhã : repérer les subjonctifs", "Shadowing 5 min", "Anki 10 min"] },
+        "mer": { "title": "Cours 1 — conseils sur un sujet de société (é importante que...)", "subtasks": ["Préparer : conseils sur un sujet de société (é importante que...)", "Cours avec Fábio + fiche remplie"] },
+        "jeu": { "title": "Article d'opinion + 10 verbes C1", "subtasks": ["Article d'opinion", "10 verbes C1 en cartes (mitigar, preconizar, salvaguardar...)", "Anki 10 min"] },
+        "ven": { "title": "Lettre de réclamation formelle (200 mots)", "subtasks": ["Lettre de réclamation formelle (200 mots)", "Relecture LanguageTool"] },
+        "sam": { "title": "Appel famille : 3 conseils au subjonctif", "subtasks": ["Appel famille : 3 conseils au subjonctif", "Mémo vocal 2 min"] },
+        "dim": { "title": "Rabo de Peixe ép. 1-2 + bilan", "subtasks": ["Rabo de Peixe ép. 1-2", "Bilan de la semaine"] },
+        "cours2": { "title": "Cours 2 — correction de la lettre + exercices", "subtasks": ["Cours 2 : correction de la lettre + exercices"] }
+      }
+    },
+    {
+      "n": 6,
+      "theme": "Conjuntivo imperfeito et hypothèses",
+      "objective": "Hypothèse irréelle (se eu pudesse, iria...).",
+      "days": {
+        "lun": { "title": "Conjuntivo imperfeito + condicional", "subtasks": ["Grammaire : conjuntivo imperfeito + condicional", "Anki 10 min"] },
+        "mar": { "title": "Écoute + collocations", "subtasks": ["Écoute + shadowing", "Collocations : tomar uma decisão, levar a cabo, pôr em causa", "Anki 10 min"] },
+        "mer": { "title": "Cours 1 — « Se fosses ministro, o que farias? »", "subtasks": ["Préparer : « Se fosses ministro, o que farias? »", "Cours avec Fábio + fiche remplie"] },
+        "jeu": { "title": "Article d'opinion + 5 collocations", "subtasks": ["Article d'opinion", "5 collocations", "Anki 10 min"] },
+        "ven": { "title": "« Si j'habitais au Portugal... » (200 mots)", "subtasks": ["Écrire « Si j'habitais au Portugal... » (200 mots)", "Relecture LanguageTool"] },
+        "sam": { "title": "Appel famille : « Se pudesses viver noutro sítio, onde seria? »", "subtasks": ["Appel famille : « Se pudesses viver noutro sítio, onde seria? »", "Mémo vocal 2 min"] },
+        "dim": { "title": "Rabo de Peixe ép. 3-4 + bilan", "subtasks": ["Rabo de Peixe ép. 3-4", "Bilan de la semaine"] },
+        "cours2": { "title": "Cours 2 — correction + jeu de rôle hypothétique", "subtasks": ["Cours 2 : correction + jeu de rôle hypothétique"] }
+      }
+    },
+    {
+      "n": 7,
+      "theme": "Futuro do conjuntivo et lecture littéraire",
+      "objective": "Futur incertain (quando puder, se tiveres tempo) ; première nouvelle authentique.",
+      "days": {
+        "lun": { "title": "Futuro do conjuntivo", "subtasks": ["Grammaire : futuro do conjuntivo", "Anki 10 min"] },
+        "mar": { "title": "Écoute + 10 adjectifs C1", "subtasks": ["Écoute + shadowing", "10 adjectifs C1 (pertinente, viável, inerente...)", "Anki 10 min"] },
+        "mer": { "title": "Cours 1 — tes projets avec quando et se", "subtasks": ["Préparer : tes projets avec quando et se", "Cours avec Fábio + fiche remplie"] },
+        "jeu": { "title": "Nouvelle de Sophia de Mello Breyner", "subtasks": ["Lire une nouvelle de Sophia de Mello Breyner (Contos Exemplares)", "Carnet de mots", "Anki 10 min"] },
+        "ven": { "title": "Résumé de la nouvelle (200 mots)", "subtasks": ["Résumé de la nouvelle (200 mots)", "Relecture LanguageTool"] },
+        "sam": { "title": "Appel famille : « Quando eu for a Portugal... »", "subtasks": ["Appel famille : « Quando eu for a Portugal... »", "Mémo vocal 2 min"] },
+        "dim": { "title": "Rabo de Peixe ou Glória + bilan", "subtasks": ["Rabo de Peixe ou Glória", "Bilan de la semaine"] },
+        "cours2": { "title": "Cours 2 — présenter la nouvelle + correction du résumé", "subtasks": ["Cours 2 : présenter la nouvelle + correction du résumé"] }
+      }
+    },
+    {
+      "n": 8,
+      "theme": "Infinitivo pessoal, argumentation, bilan de phase",
+      "objective": "Texte argumentatif de 250 mots structuré.",
+      "days": {
+        "lun": { "title": "Infinitivo pessoal", "subtasks": ["Grammaire : infinitivo pessoal (para fazermos, antes de saírem)", "Anki 10 min"] },
+        "mar": { "title": "Débat RTP Play + connecteurs", "subtasks": ["Débat sur RTP Play", "Connecteurs : dado que, ainda que, por conseguinte", "Anki 10 min"] },
+        "mer": { "title": "Cours 1 — débat pour/contre le télétravail", "subtasks": ["Préparer : débat pour/contre le télétravail", "Cours avec Fábio + fiche remplie"] },
+        "jeu": { "title": "2 articles opposés sur le même sujet", "subtasks": ["2 articles opposés sur le même sujet", "Carnet de mots", "Anki 10 min"] },
+        "ven": { "title": "Texte argumentatif sur le télétravail (250 mots)", "subtasks": ["Texte argumentatif sur le télétravail (250 mots)", "Relecture LanguageTool"] },
+        "sam": { "title": "Appel famille : débattre d'un sujet d'actualité", "subtasks": ["Appel famille : débattre d'un sujet d'actualité", "Mémo vocal 2 min"] },
+        "dim": { "title": "Bilan de phase (S4 vs S8)", "subtasks": ["Comparer S4 et S8", "Bilan de phase"] },
+        "cours2": { "title": "Cours 2 — correction + exposé de 3 min sans notes", "subtasks": ["Cours 2 : correction + exposé de 3 min sans notes"] }
+      }
+    },
+    {
+      "n": 9,
+      "theme": "Temps composés et niveaux de langue",
+      "objective": "Tenho feito / tinha feito ; une idée en 3 registres.",
+      "days": {
+        "lun": { "title": "Perfeito composto, mais-que-perfeito", "subtasks": ["Grammaire : perfeito composto, mais-que-perfeito", "Anki 10 min"] },
+        "mar": { "title": "Écoute + tableau des registres", "subtasks": ["Écoute + shadowing", "Tableau familier/neutre/soutenu (5 lignes)", "Anki 10 min"] },
+        "mer": { "title": "Cours 1 — reformuler 5 phrases dans les 3 registres", "subtasks": ["Préparer : 5 phrases dans les 3 registres", "Cours avec Fábio + fiche remplie"] },
+        "jeu": { "title": "2 crónicas", "subtasks": ["2 crónicas (Ricardo Araújo Pereira ou Miguel Esteves Cardoso)", "Carnet de mots", "Anki 10 min"] },
+        "ven": { "title": "Ta crónica : la vie en France vue par un Portugais (250 mots)", "subtasks": ["Écrire ta crónica sur la vie en France vue par un Portugais (250 mots)", "Relecture LanguageTool"] },
+        "sam": { "title": "Appel famille : « O que tens andado a fazer? »", "subtasks": ["Appel famille : « O que tens andado a fazer? »", "Mémo vocal 2 min"] },
+        "dim": { "title": "Tabu (Miguel Gomes) + bilan", "subtasks": ["Film Tabu (Miguel Gomes)", "Bilan de la semaine"] },
+        "cours2": { "title": "Cours 2 — correction + lecture à voix haute", "subtasks": ["Cours 2 : correction + lecture à voix haute"] }
+      }
+    },
+    {
+      "n": 10,
+      "theme": "Voix passive et synthèse",
+      "objective": "Résumer et confronter deux textes.",
+      "days": {
+        "lun": { "title": "Voix passive, se impersonnel", "subtasks": ["Grammaire : voix passive, se impersonnel", "Anki 10 min"] },
+        "mar": { "title": "Écoute + 10 mots de mes études", "subtasks": ["Écoute + shadowing", "10 mots d'un thème de mes études", "Anki 10 min"] },
+        "mer": { "title": "Cours 1 — exposé de 3 min sur mes études", "subtasks": ["Préparer : exposé de 3 min sur un sujet de mes études", "Cours avec Fábio + fiche remplie"] },
+        "jeu": { "title": "Nouvelle de Mia Couto", "subtasks": ["Lire une nouvelle de Mia Couto (Estórias Abensonhadas)", "Carnet de mots", "Anki 10 min"] },
+        "ven": { "title": "Synthèse de 2 articles (250 mots)", "subtasks": ["Synthèse de 2 articles (250 mots)", "Relecture LanguageTool"] },
+        "sam": { "title": "Appel famille : expliquer mes études", "subtasks": ["Appel famille : expliquer mes études", "Mémo vocal 2 min"] },
+        "dim": { "title": "Série en VO + bilan", "subtasks": ["Série en VO", "Bilan de la semaine"] },
+        "cours2": { "title": "Cours 2 — correction + questions sur la nouvelle", "subtasks": ["Cours 2 : correction + questions sur la nouvelle"] }
+      }
+    },
+    {
+      "n": 11,
+      "theme": "Discours indirect et proverbes",
+      "objective": "Rapporter des paroles avec la concordance des temps.",
+      "days": {
+        "lun": { "title": "Discours indirect", "subtasks": ["Grammaire : discours indirect", "Anki 10 min"] },
+        "mar": { "title": "Écoute + 5 proverbes", "subtasks": ["Écoute + shadowing", "5 proverbes", "Anki 10 min"] },
+        "mer": { "title": "Cours 1 — rapporter une conversation entendue", "subtasks": ["Préparer : une conversation entendue à rapporter", "Cours avec Fábio + fiche remplie"] },
+        "jeu": { "title": "Suite de Mia Couto ou autre nouvelle", "subtasks": ["Suite de Mia Couto ou autre nouvelle", "Carnet de mots", "Anki 10 min"] },
+        "ven": { "title": "Conversation familiale au discours indirect (200 mots)", "subtasks": ["Rapporter une conversation familiale au discours indirect (200 mots)", "Relecture LanguageTool"] },
+        "sam": { "title": "Appel famille : leurs souvenirs du 25 avril 1974", "subtasks": ["Appel famille : leurs souvenirs du 25 avril 1974", "Mémo vocal 2 min"] },
+        "dim": { "title": "Capitães de Abril + bilan", "subtasks": ["Film Capitães de Abril", "Bilan de la semaine"] },
+        "cours2": { "title": "Cours 2 — correction + débat sur le film", "subtasks": ["Cours 2 : correction + débat sur le film"] }
+      }
+    },
+    {
+      "n": 12,
+      "theme": "Révision et bilan final",
+      "objective": "Test blanc DIPLE (B2) et comparaison avec la semaine 1.",
+      "days": {
+        "lun": { "title": "Relire tout le journal d'erreurs", "subtasks": ["Relire tout le journal d'erreurs", "Anki 10 min"] },
+        "mar": { "title": "Test blanc DIPLE : compréhension orale", "subtasks": ["Test blanc DIPLE : compréhension orale", "Anki 10 min"] },
+        "mer": { "title": "Cours 1 — simulation de l'oral DIPLE", "subtasks": ["Préparer : oral DIPLE", "Cours avec Fábio + fiche remplie"] },
+        "jeu": { "title": "Test blanc DIPLE : compréhension écrite + roman court", "subtasks": ["Test blanc DIPLE : compréhension écrite", "Choisir un roman court", "Anki 10 min"] },
+        "ven": { "title": "Test blanc DIPLE : production écrite", "subtasks": ["Test blanc DIPLE : production écrite"] },
+        "sam": { "title": "Conversation libre de 30 min avec la famille, enregistrée", "subtasks": ["Conversation libre de 30 min avec la famille, enregistrée"] },
+        "dim": { "title": "Bilan final (S1 vs S12) + objectif des 3 mois suivants", "subtasks": ["Comparer S1 et S12", "Objectif des 3 mois suivants", "Bilan de phase"] },
+        "cours2": { "title": "Cours 2 — correction du test blanc + plan de la suite", "subtasks": ["Cours 2 : correction du test blanc + plan de la suite"] }
+      }
+    }
+  ]
+}

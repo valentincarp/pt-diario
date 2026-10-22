@@ -1,0 +1,102 @@
+# PT diário — portugais tous les jours
+
+Appli web installable (PWA) qui remplace les carnets papier : tâche du jour issue du plan de 12 semaines, série (streak), rattrapage, cours avec Fábio, journal d'erreurs, cartes de révision (FSRS) et bilans. Les données restent sur l'appareil (IndexedDB) et fonctionnent hors ligne. Les rappels passent par l'appli **Calendrier** du téléphone, grâce à un fichier `.ics`.
+
+## Installation et lancement (sur le Mac)
+
+Prérequis : Node.js 20 ou plus récent.
+
+```bash
+cd app
+npm install
+npm run dev        # http://localhost:5173 (+ adresse « Network » pour le téléphone sur le même Wi-Fi)
+npm test           # tests de la logique (semaine, série, décalage, rattrapage, cartes, .ics)
+npm run build      # version de production dans dist/
+```
+
+## Modifier le plan (`src/plan.json`)
+
+Tout le plan est dans `src/plan.json`. Aucune tâche n'est écrite dans les composants.
+
+```jsonc
+{
+  "phases": [{ "n": 1, "title": "Consolider le B1", "weeks": [1, 4] }],  // la dernière semaine d'une phase = bilan de phase
+  "weeks": [
+    {
+      "n": 1,
+      "theme": "Pretérito perfeito",
+      "objective": "…",
+      "days": {
+        "lun": { "title": "Titre court (notification)", "subtasks": ["Grammaire : …", "Anki 10 min", "1 article RTP Notícias"] },
+        "mar": {}, "mer": {}, "jeu": {}, "ven": {}, "sam": {}, "dim": {},
+        "cours2": { "title": "…", "subtasks": ["Cours 2 : …"] }   // ajouté au jour choisi dans Réglages
+      }
+    }
+  ]
+}
+```
+
+Règles :
+- Chaque semaine doit avoir les 7 jours (`lun` … `dim`) et `cours2`, avec au moins une sous-tâche. Le test `npm test` le vérifie.
+- Une sous-tâche contenant le mot **« Anki »** se coche toute seule quand la session de cartes du jour est validée.
+- L'avancement est enregistré **par texte de sous-tâche**. Si tu renommes une sous-tâche déjà cochée, elle redevient décochée.
+- Après modification : `npm test`, puis redéploie l'appli (voir plus bas).
+
+## Installer l'appli sur l'iPhone
+
+Une PWA doit être servie en **HTTPS** pour fonctionner hors ligne. L'appli n'a pas de serveur : il suffit d'un hébergement de fichiers statiques gratuit. Exemple avec GitHub Pages :
+
+1. Crée un dépôt GitHub (privé ou public) et envoie-y le contenu du dossier `app/`.
+2. Lance `npm run deploy`. La commande construit l'appli et publie `dist/` sur la branche `gh-pages`.
+3. Sur GitHub : Settings → Pages → Source : branche `gh-pages`. L'adresse ressemble à `https://<toi>.github.io/<depot>/`.
+4. Sur l'iPhone, ouvre cette adresse dans **Safari**, puis Partager → **Sur l'écran d'accueil**.
+5. Ouvre l'appli depuis l'icône. Les données de l'appli installée sont **séparées** de celles de Safari.
+
+Pour un essai rapide sans hébergement, ouvre l'adresse « Network » affichée par `npm run dev` dans Safari, avec le téléphone sur le même Wi-Fi. Sans HTTPS, ce mode ne fonctionne pas hors ligne : il sert juste à tester.
+
+## Notifications : le calendrier `.ics`
+
+Les rappels sont des événements du Calendrier iOS. Ils arrivent donc appli fermée, hors ligne, sans serveur.
+
+Le fichier contient, de la date du jour jusqu'à la fin de la semaine 12 :
+- **un événement par jour** (journée entière), avec en titre la tâche du jour et un message en portugais, et une alerte à 20 h (réglable). Le lundi des semaines 4, 8 et 12, le titre annonce le test blanc ;
+- **les cours avec Fábio** : mercredi à 18 h par défaut, avec une alerte 30 min avant et ce qu'il faut préparer. Le cours 2 apparaît s'il est réglé ;
+- **le bilan du dimanche** à 19 h. Les semaines 4, 8 et 12, c'est le bilan de phase.
+
+**Première importation**
+1. Dans l'appli Calendrier : Calendriers → Ajouter un calendrier → nomme-le **Portugais**.
+2. Dans PT diário : Réglages → **Générer / regénérer le calendrier (.ics)** → Enregistrer dans Fichiers.
+3. Dans l'appli Fichiers, touche `portugais.ics` → **Ajouter tout** → choisis le calendrier **Portugais**.
+4. Vérifie dans Réglages iPhone → Notifications → Calendrier que les notifications sont autorisées.
+5. Le bouton **Tester la notification** crée un événement dans 5 min. Importe-le de la même façon.
+
+**Après un décalage du plan ou un changement d'horaire**
+Supprime le calendrier Portugais (Calendrier → Calendriers → ⓘ → Supprimer le calendrier), recrée-le, puis importe le nouveau fichier. Si tu importes par-dessus sans supprimer, les événements apparaîtront en double.
+
+Limite : un calendrier ne sait pas si tu as déjà travaillé. Il n'y a donc pas de rappel « Série en danger ». Le rappel de 20 h tombe tous les jours.
+
+## Sauvegarde et changement d'appareil
+
+Réglages → **Exporter mes données (JSON)**. Le fichier contient tout : plan suivi, journées, fautes, cours, cartes, révisions et bilans. **Importer une sauvegarde** remplace toutes les données actuelles. iOS peut effacer les données d'un site si le téléphone manque de place : exporte au moins chaque dimanche (le rappel du bilan te le rappelle).
+
+## Règles de l'appli
+
+- **Semaine en cours** : calculée depuis le lundi de la semaine 1 (19/10/2026 au départ).
+- **Décaler le plan** (Réglages) : « reprendre à la semaine N » à partir de la semaine actuelle. L'historique reste intact, car chaque journée garde la semaine et le jour qu'elle avait au moment où tu l'as remplie.
+- **Statut du jour** : *complet* si la tâche prévue ce jour-là est terminée ce jour-là ; *minimum* si la session de cartes est validée ou si tu as terminé un rattrapage ce jour-là.
+- **Série** : jours consécutifs complets ou minimum. Aujourd'hui ne casse pas la série avant minuit. Un rattrapage fait avancer le plan, mais ne répare pas la série.
+- **Rattrapage** : uniquement les jours passés non terminés de la semaine en cours.
+- **Cartes** : algorithme FSRS (bibliothèque `ts-fsrs`). La session du jour contient les cartes dues et 5 nouvelles maximum. Quand la file est vide, tu peux continuer en révision anticipée ou avec 5 nouvelles de plus. La sous-tâche « Anki » est validée à 10 min de session, ou quand il ne reste vraiment plus rien à revoir.
+- **Données de départ** : le paquet de la semaine 1 (10 phrases) et le carnet papier de la semaine 1 (mots en cartes, fautes dans le journal, notes). Ces entrées sont placées sur les dates du plan : lundi 19, mercredi 21 et jeudi 22 octobre.
+
+## Organisation du code
+
+```
+src/plan.json        le plan (modifiable)
+src/types.ts         types du plan et des données
+src/logic/           logique pure et testée : dates, plan, streak, cards, ics (+ logic.test.ts)
+src/store.ts         état (zustand) sauvegardé dans IndexedDB, export/import
+src/seed.ts          données de départ (paquet S1 + carnet)
+src/screens/         Aujourd'hui, Cartes (+ session), Journal, Fábio, Bilans, Réglages
+src/components/      modales (faute, carte), sous-tâches, calendrier de la série
+```
