@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Portugais
 BEGIN:VEVENT
 UID:jour-2026-10-19@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261019
-DTEND;VALUE=DATE:20261020
+DTSTAMP:20261022T175215Z
+DTSTART:20261019T120000
+DTEND:20261019T123000
 SUMMARY:Vamos lá! Perfeito régulier et irrégulier
 DESCRIPTION:Semaine 1 — Pretérito perfeito\nLundi :\n• Grammaire : per
  feito régulier et irrégulier (Gramática Ativa 1)\n• Anki 10 min\n• 
@@ -15,28 +15,28 @@ DESCRIPTION:Semaine 1 — Pretérito perfeito\nLundi :\n• Grammaire : per
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Vamos lá! Perfeito régulier et irrégulier
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-10-20@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261020
-DTEND;VALUE=DATE:20261021
+DTSTAMP:20261022T175215Z
+DTSTART:20261020T120000
+DTEND:20261020T123000
 SUMMARY:Força! Écoute Practice Portuguese
 DESCRIPTION:Semaine 1 — Pretérito perfeito\nMardi :\n• Écoute Practic
  e Portuguese\, transcrire 2 min\n• Shadowing 5 min\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Força! Écoute Practice Portuguese
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-10-21@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261021
-DTEND;VALUE=DATE:20261022
+DTSTAMP:20261022T175215Z
+DTSTART:20261021T120000
+DTEND:20261021T123000
 SUMMARY:Hoje é dia de português. Cours 1 — raconter tes dernières vaca
  nces au perfeito
 DESCRIPTION:Semaine 1 — Pretérito perfeito\nMercredi :\n• Préparer : 
@@ -45,12 +45,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Hoje é dia de português. Cours 1 — raconter tes dernières 
  vacances au perfeito
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cours1-2026-10-21@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261021T190000
 DTEND:20261021T195000
 SUMMARY:Cours 1 avec Fábio
@@ -64,37 +64,37 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-10-22@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261022
-DTEND;VALUE=DATE:20261023
+DTSTAMP:20261022T175215Z
+DTSTART:20261022T120000
+DTEND:20261022T123000
 SUMMARY:Devagar se vai ao longe. Lecture graduée B1
 DESCRIPTION:Semaine 1 — Pretérito perfeito\nJeudi :\n• Lecture gradué
  e B1\n• Carnet de mots\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Devagar se vai ao longe. Lecture graduée B1
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-10-23@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261024
+DTSTAMP:20261022T175215Z
+DTSTART:20261023T120000
+DTEND:20261023T123000
 SUMMARY:Passo a passo! Écriture « Mon dernier été » (150 mots)
 DESCRIPTION:Semaine 1 — Pretérito perfeito\nVendredi :\n• Écrire « M
  on dernier été » (150 mots)\n• Relecture LanguageTool
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Passo a passo! Écriture « Mon dernier été » (150 mots)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-10-24@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261024
-DTEND;VALUE=DATE:20261025
+DTSTAMP:20261022T175215Z
+DTSTART:20261024T120000
+DTEND:20261024T123000
 SUMMARY:Quem não arrisca não petisca. Appel famille : raconter ta semaine
   au perfeito
 DESCRIPTION:Semaine 1 — Pretérito perfeito\nSamedi :\n• Appel famille 
@@ -104,14 +104,14 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Quem não arrisca não petisca. Appel famille : raconter ta sem
  aine au perfeito
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-10-25@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261025
-DTEND;VALUE=DATE:20261026
+DTSTAMP:20261022T175215Z
+DTSTART:20261025T120000
+DTEND:20261025T123000
 SUMMARY:Mais vale tarde do que nunca. A Gaiola Dourada (1re moitié) + bila
  n
 DESCRIPTION:Semaine 1 — Pretérito perfeito\nDimanche :\n• Film A Gaiol
@@ -120,12 +120,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Mais vale tarde do que nunca. A Gaiola Dourada (1re moitié) + 
  bilan
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bilan-2026-10-25@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261025T140000
 DTEND:20261025T142000
 SUMMARY:Bilan de la semaine 1
@@ -139,9 +139,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-10-26@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261026
-DTEND;VALUE=DATE:20261027
+DTSTAMP:20261022T175215Z
+DTSTART:20261026T120000
+DTEND:20261026T123000
 SUMMARY:Vamos lá! Imperfeito + contraste
 DESCRIPTION:Semaine 2 — Imperfeito et contraste avec le perfeito\nLundi :
  \n• Grammaire : imperfeito + contraste avec le perfeito\n• Anki 10 min
@@ -149,28 +149,28 @@ DESCRIPTION:Semaine 2 — Imperfeito et contraste avec le perfeito\nLundi :
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Vamos lá! Imperfeito + contraste
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-10-27@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261027
-DTEND;VALUE=DATE:20261028
+DTSTAMP:20261022T175215Z
+DTSTART:20261027T120000
+DTEND:20261027T123000
 SUMMARY:Força! Écoute + shadowing
 DESCRIPTION:Semaine 2 — Imperfeito et contraste avec le perfeito\nMardi :
  \n• Écoute\, transcrire 2 min\n• Shadowing 5 min\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Força! Écoute + shadowing
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-10-28@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261029
+DTSTAMP:20261022T175215Z
+DTSTART:20261028T120000
+DTEND:20261028T123000
 SUMMARY:Hoje é dia de português. Cours 1 — souvenir d'enfance (quando e
  ra pequeno...)
 DESCRIPTION:Semaine 2 — Imperfeito et contraste avec le perfeito\nMercred
@@ -180,12 +180,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Hoje é dia de português. Cours 1 — souvenir d'enfance (quan
  do era pequeno...)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cours1-2026-10-28@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261028T190000
 DTEND:20261028T195000
 SUMMARY:Cours 1 avec Fábio
@@ -199,9 +199,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-10-29@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261030
+DTSTAMP:20261022T175215Z
+DTSTART:20261029T120000
+DTEND:20261029T123000
 SUMMARY:Devagar se vai ao longe. 2 articles RTP : de repente\, entretanto\,
   costumava
 DESCRIPTION:Semaine 2 — Imperfeito et contraste avec le perfeito\nJeudi :
@@ -211,14 +211,14 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Devagar se vai ao longe. 2 articles RTP : de repente\, entretan
  to\, costumava
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-10-30@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
+DTSTAMP:20261022T175215Z
+DTSTART:20261030T120000
+DTEND:20261030T123000
 SUMMARY:Passo a passo! Écriture : un souvenir d'enfance (150-200 mots)
 DESCRIPTION:Semaine 2 — Imperfeito et contraste avec le perfeito\nVendred
  i :\n• Écrire un souvenir d'enfance (150-200 mots)\n• Relecture Langu
@@ -226,14 +226,14 @@ DESCRIPTION:Semaine 2 — Imperfeito et contraste avec le perfeito\nVendred
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Passo a passo! Écriture : un souvenir d'enfance (150-200 mots)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-10-31@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261031
-DTEND;VALUE=DATE:20261101
+DTSTAMP:20261022T175215Z
+DTSTART:20261031T120000
+DTEND:20261031T123000
 SUMMARY:Quem não arrisca não petisca. Appel famille : « Comment c'était
   quand tu étais jeune au Portugal ? »
 DESCRIPTION:Semaine 2 — Imperfeito et contraste avec le perfeito\nSamedi 
@@ -243,26 +243,26 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Quem não arrisca não petisca. Appel famille : « Comment c'é
  tait quand tu étais jeune au Portugal ? »
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-01@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
+DTSTAMP:20261022T175215Z
+DTSTART:20261101T120000
+DTEND:20261101T123000
 SUMMARY:Mais vale tarde do que nunca. A Gaiola Dourada (fin) + bilan
 DESCRIPTION:Semaine 2 — Imperfeito et contraste avec le perfeito\nDimanch
  e :\n• Film A Gaiola Dourada (fin)\n• Bilan de la semaine
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Mais vale tarde do que nunca. A Gaiola Dourada (fin) + bilan
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bilan-2026-11-01@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261101T140000
 DTEND:20261101T142000
 SUMMARY:Bilan de la semaine 2
@@ -276,9 +276,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-02@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261102
-DTEND;VALUE=DATE:20261103
+DTSTAMP:20261022T175215Z
+DTSTART:20261102T120000
+DTEND:20261102T123000
 SUMMARY:Vamos lá! Pronoms o\, a\, lhe et contractions
 DESCRIPTION:Semaine 3 — Pronoms compléments et expressions idiomatiques\
  nLundi :\n• Grammaire : o\, a\, lhe\, place du pronom\, contractions mo\
@@ -286,14 +286,14 @@ DESCRIPTION:Semaine 3 — Pronoms compléments et expressions idiomatiques\
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Vamos lá! Pronoms o\, a\, lhe et contractions
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-03@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261103
-DTEND;VALUE=DATE:20261104
+DTSTAMP:20261022T175215Z
+DTSTART:20261103T120000
+DTEND:20261103T123000
 SUMMARY:Força! Écoute + 5 expressions idiomatiques
 DESCRIPTION:Semaine 3 — Pronoms compléments et expressions idiomatiques\
  nMardi :\n• Écoute + shadowing\n• 5 expressions idiomatiques en carte
@@ -301,14 +301,14 @@ DESCRIPTION:Semaine 3 — Pronoms compléments et expressions idiomatiques\
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Força! Écoute + 5 expressions idiomatiques
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-04@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261104
-DTEND;VALUE=DATE:20261105
+DTSTAMP:20261022T175215Z
+DTSTART:20261104T120000
+DTEND:20261104T123000
 SUMMARY:Hoje é dia de português. Cours 1 — simulation magasin/restauran
  t avec pronoms
 DESCRIPTION:Semaine 3 — Pronoms compléments et expressions idiomatiques\
@@ -318,12 +318,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Hoje é dia de português. Cours 1 — simulation magasin/resta
  urant avec pronoms
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cours1-2026-11-04@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261104T190000
 DTEND:20261104T195000
 SUMMARY:Cours 1 avec Fábio
@@ -337,9 +337,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-05@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
+DTSTAMP:20261022T175215Z
+DTSTART:20261105T120000
+DTEND:20261105T123000
 SUMMARY:Devagar se vai ao longe. Lecture graduée + 5 expressions idiomatiq
  ues
 DESCRIPTION:Semaine 3 — Pronoms compléments et expressions idiomatiques\
@@ -349,14 +349,14 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Devagar se vai ao longe. Lecture graduée + 5 expressions idiom
  atiques
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-06@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261107
+DTSTAMP:20261022T175215Z
+DTSTART:20261106T120000
+DTEND:20261106T123000
 SUMMARY:Passo a passo! Courriel informel à un proche (150 mots)
 DESCRIPTION:Semaine 3 — Pronoms compléments et expressions idiomatiques\
  nVendredi :\n• Courriel informel à un proche (150 mots\, 2 expressions 
@@ -364,14 +364,14 @@ DESCRIPTION:Semaine 3 — Pronoms compléments et expressions idiomatiques\
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Passo a passo! Courriel informel à un proche (150 mots)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-07@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261107
-DTEND;VALUE=DATE:20261108
+DTSTAMP:20261022T175215Z
+DTSTART:20261107T120000
+DTEND:20261107T123000
 SUMMARY:Quem não arrisca não petisca. Appel famille : placer 3 expression
  s idiomatiques
 DESCRIPTION:Semaine 3 — Pronoms compléments et expressions idiomatiques\
@@ -381,14 +381,14 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Quem não arrisca não petisca. Appel famille : placer 3 expres
  sions idiomatiques
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-08@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261108
-DTEND;VALUE=DATE:20261109
+DTSTAMP:20261022T175215Z
+DTSTART:20261108T120000
+DTEND:20261108T123000
 SUMMARY:Mais vale tarde do que nunca. 1 épisode de série en VO + bilan
 DESCRIPTION:Semaine 3 — Pronoms compléments et expressions idiomatiques\
  nDimanche :\n• 1 épisode de série en VO\n• Bilan de la semaine
@@ -396,12 +396,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Mais vale tarde do que nunca. 1 épisode de série en VO + bila
  n
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bilan-2026-11-08@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261108T140000
 DTEND:20261108T142000
 SUMMARY:Bilan de la semaine 3
@@ -415,9 +415,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-09@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261109
-DTEND;VALUE=DATE:20261110
+DTSTAMP:20261022T175215Z
+DTSTART:20261109T120000
+DTEND:20261109T123000
 SUMMARY:Vamos lá! Test blanc cette semaine · Futuro simples\, condicional
  \, mésoclise
 DESCRIPTION:Semaine 4 — Futuro\, condicional\, bilan de phase\nLundi :\n
@@ -427,14 +427,14 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Vamos lá! Test blanc cette semaine · Futuro simples\, condici
  onal\, mésoclise
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-10@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261110
-DTEND;VALUE=DATE:20261111
+DTSTAMP:20261022T175215Z
+DTSTART:20261110T120000
+DTEND:20261110T123000
 SUMMARY:Força! Expresso da Manhã + connecteurs
 DESCRIPTION:Semaine 4 — Futuro\, condicional\, bilan de phase\nMardi :\n
  • Podcast Expresso da Manhã\n• Connecteurs : no entanto\, contudo\, o
@@ -442,14 +442,14 @@ DESCRIPTION:Semaine 4 — Futuro\, condicional\, bilan de phase\nMardi :\n
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Força! Expresso da Manhã + connecteurs
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-11@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261111
-DTEND;VALUE=DATE:20261112
+DTSTAMP:20261022T175215Z
+DTSTART:20261111T120000
+DTEND:20261111T123000
 SUMMARY:Hoje é dia de português. Cours 1 — « O que farias se... ? » +
   projets d'avenir
 DESCRIPTION:Semaine 4 — Futuro\, condicional\, bilan de phase\nMercredi :
@@ -459,12 +459,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Hoje é dia de português. Cours 1 — « O que farias se... ? 
  » + projets d'avenir
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cours1-2026-11-11@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261111T190000
 DTEND:20261111T195000
 SUMMARY:Cours 1 avec Fábio
@@ -478,9 +478,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-12@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
+DTSTAMP:20261022T175215Z
+DTSTART:20261112T120000
+DTEND:20261112T123000
 SUMMARY:Devagar se vai ao longe. Article + test blanc DEPLE (compréhension
   écrite)
 DESCRIPTION:Semaine 4 — Futuro\, condicional\, bilan de phase\nJeudi :\n
@@ -490,28 +490,28 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Devagar se vai ao longe. Article + test blanc DEPLE (compréhen
  sion écrite)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-13@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261114
+DTSTAMP:20261022T175215Z
+DTSTART:20261113T120000
+DTEND:20261113T123000
 SUMMARY:Passo a passo! Test blanc DEPLE (production écrite)
 DESCRIPTION:Semaine 4 — Futuro\, condicional\, bilan de phase\nVendredi :
  \n• Test blanc DEPLE : production écrite
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Passo a passo! Test blanc DEPLE (production écrite)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-14@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261114
-DTEND;VALUE=DATE:20261115
+DTSTAMP:20261022T175215Z
+DTSTART:20261114T120000
+DTEND:20261114T123000
 SUMMARY:Quem não arrisca não petisca. Appel famille : tes projets pour l'
  an prochain
 DESCRIPTION:Semaine 4 — Futuro\, condicional\, bilan de phase\nSamedi :\n
@@ -520,14 +520,14 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Quem não arrisca não petisca. Appel famille : tes projets pou
  r l'an prochain
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-15@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261115
-DTEND;VALUE=DATE:20261116
+DTSTAMP:20261022T175215Z
+DTSTART:20261115T120000
+DTEND:20261115T123000
 SUMMARY:Mais vale tarde do que nunca. Bilan de phase : comparer texte et m
  émo S1 / S4
 DESCRIPTION:Semaine 4 — Futuro\, condicional\, bilan de phase\nDimanche :
@@ -536,12 +536,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Mais vale tarde do que nunca. Bilan de phase : comparer texte e
  t mémo S1 / S4
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bilan-2026-11-15@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261115T140000
 DTEND:20261115T142000
 SUMMARY:Bilan de phase (semaine 4)
@@ -555,37 +555,37 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-16@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261116
-DTEND;VALUE=DATE:20261117
+DTSTAMP:20261022T175215Z
+DTSTART:20261116T120000
+DTEND:20261116T123000
 SUMMARY:Vamos lá! Conjuntivo presente
 DESCRIPTION:Semaine 5 — Conjuntivo presente\nLundi :\n• Grammaire : con
  juntivo presente (Gramática Ativa 2)\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Vamos lá! Conjuntivo presente
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-17@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261117
-DTEND;VALUE=DATE:20261118
+DTSTAMP:20261022T175215Z
+DTSTART:20261117T120000
+DTEND:20261117T123000
 SUMMARY:Força! Expresso da Manhã : repérer les subjonctifs
 DESCRIPTION:Semaine 5 — Conjuntivo presente\nMardi :\n• Expresso da Man
  hã : repérer les subjonctifs\n• Shadowing 5 min\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Força! Expresso da Manhã : repérer les subjonctifs
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-18@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261118
-DTEND;VALUE=DATE:20261119
+DTSTAMP:20261022T175215Z
+DTSTART:20261118T120000
+DTEND:20261118T123000
 SUMMARY:Hoje é dia de português. Cours 1 — conseils sur un sujet de soc
  iété (é importante que...)
 DESCRIPTION:Semaine 5 — Conjuntivo presente\nMercredi :\n• Préparer : 
@@ -595,12 +595,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Hoje é dia de português. Cours 1 — conseils sur un sujet de
   société (é importante que...)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cours1-2026-11-18@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261118T190000
 DTEND:20261118T195000
 SUMMARY:Cours 1 avec Fábio
@@ -614,9 +614,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-19@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261119
-DTEND;VALUE=DATE:20261120
+DTSTAMP:20261022T175215Z
+DTSTART:20261119T120000
+DTEND:20261119T123000
 SUMMARY:Devagar se vai ao longe. Article d'opinion + 10 verbes C1
 DESCRIPTION:Semaine 5 — Conjuntivo presente\nJeudi :\n• Article d'opini
  on\n• 10 verbes C1 en cartes (mitigar\, preconizar\, salvaguardar...)\n
@@ -624,28 +624,28 @@ DESCRIPTION:Semaine 5 — Conjuntivo presente\nJeudi :\n• Article d'opini
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Devagar se vai ao longe. Article d'opinion + 10 verbes C1
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-20@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
+DTSTAMP:20261022T175215Z
+DTSTART:20261120T120000
+DTEND:20261120T123000
 SUMMARY:Passo a passo! Lettre de réclamation formelle (200 mots)
 DESCRIPTION:Semaine 5 — Conjuntivo presente\nVendredi :\n• Lettre de r
  éclamation formelle (200 mots)\n• Relecture LanguageTool
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Passo a passo! Lettre de réclamation formelle (200 mots)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-21@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
+DTSTAMP:20261022T175215Z
+DTSTART:20261121T120000
+DTEND:20261121T123000
 SUMMARY:Quem não arrisca não petisca. Appel famille : 3 conseils au subjo
  nctif
 DESCRIPTION:Semaine 5 — Conjuntivo presente\nSamedi :\n• Appel famille 
@@ -654,26 +654,26 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Quem não arrisca não petisca. Appel famille : 3 conseils au s
  ubjonctif
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-22@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261122
-DTEND;VALUE=DATE:20261123
+DTSTAMP:20261022T175215Z
+DTSTART:20261122T120000
+DTEND:20261122T123000
 SUMMARY:Mais vale tarde do que nunca. Rabo de Peixe ép. 1-2 + bilan
 DESCRIPTION:Semaine 5 — Conjuntivo presente\nDimanche :\n• Rabo de Peix
  e ép. 1-2\n• Bilan de la semaine
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Mais vale tarde do que nunca. Rabo de Peixe ép. 1-2 + bilan
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bilan-2026-11-22@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261122T140000
 DTEND:20261122T142000
 SUMMARY:Bilan de la semaine 5
@@ -687,23 +687,23 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-23@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261123
-DTEND;VALUE=DATE:20261124
+DTSTAMP:20261022T175215Z
+DTSTART:20261123T120000
+DTEND:20261123T123000
 SUMMARY:Vamos lá! Conjuntivo imperfeito + condicional
 DESCRIPTION:Semaine 6 — Conjuntivo imperfeito et hypothèses\nLundi :\n
  • Grammaire : conjuntivo imperfeito + condicional\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Vamos lá! Conjuntivo imperfeito + condicional
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-24@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261124
-DTEND;VALUE=DATE:20261125
+DTSTAMP:20261022T175215Z
+DTSTART:20261124T120000
+DTEND:20261124T123000
 SUMMARY:Força! Écoute + collocations
 DESCRIPTION:Semaine 6 — Conjuntivo imperfeito et hypothèses\nMardi :\n
  • Écoute + shadowing\n• Collocations : tomar uma decisão\, levar a c
@@ -711,14 +711,14 @@ DESCRIPTION:Semaine 6 — Conjuntivo imperfeito et hypothèses\nMardi :\n
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Força! Écoute + collocations
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-25@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261125
-DTEND;VALUE=DATE:20261126
+DTSTAMP:20261022T175215Z
+DTSTART:20261125T120000
+DTEND:20261125T123000
 SUMMARY:Hoje é dia de português. Cours 1 — « Se fosses ministro\, o qu
  e farias? »
 DESCRIPTION:Semaine 6 — Conjuntivo imperfeito et hypothèses\nMercredi :\
@@ -728,12 +728,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Hoje é dia de português. Cours 1 — « Se fosses ministro\, 
  o que farias? »
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cours1-2026-11-25@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261125T190000
 DTEND:20261125T195000
 SUMMARY:Cours 1 avec Fábio
@@ -747,23 +747,23 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-26@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
+DTSTAMP:20261022T175215Z
+DTSTART:20261126T120000
+DTEND:20261126T123000
 SUMMARY:Devagar se vai ao longe. Article d'opinion + 5 collocations
 DESCRIPTION:Semaine 6 — Conjuntivo imperfeito et hypothèses\nJeudi :\n
  • Article d'opinion\n• 5 collocations\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Devagar se vai ao longe. Article d'opinion + 5 collocations
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-27@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261128
+DTSTAMP:20261022T175215Z
+DTSTART:20261127T120000
+DTEND:20261127T123000
 SUMMARY:Passo a passo! « Si j'habitais au Portugal... » (200 mots)
 DESCRIPTION:Semaine 6 — Conjuntivo imperfeito et hypothèses\nVendredi :\
  n• Écrire « Si j'habitais au Portugal... » (200 mots)\n• Relecture 
@@ -771,14 +771,14 @@ DESCRIPTION:Semaine 6 — Conjuntivo imperfeito et hypothèses\nVendredi :\
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Passo a passo! « Si j'habitais au Portugal... » (200 mots)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-28@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261128
-DTEND;VALUE=DATE:20261129
+DTSTAMP:20261022T175215Z
+DTSTART:20261128T120000
+DTEND:20261128T123000
 SUMMARY:Quem não arrisca não petisca. Appel famille : « Se pudesses vive
  r noutro sítio\, onde seria? »
 DESCRIPTION:Semaine 6 — Conjuntivo imperfeito et hypothèses\nSamedi :\n
@@ -788,26 +788,26 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Quem não arrisca não petisca. Appel famille : « Se pudesses 
  viver noutro sítio\, onde seria? »
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-29@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261129
-DTEND;VALUE=DATE:20261130
+DTSTAMP:20261022T175215Z
+DTSTART:20261129T120000
+DTEND:20261129T123000
 SUMMARY:Mais vale tarde do que nunca. Rabo de Peixe ép. 3-4 + bilan
 DESCRIPTION:Semaine 6 — Conjuntivo imperfeito et hypothèses\nDimanche :\
  n• Rabo de Peixe ép. 3-4\n• Bilan de la semaine
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Mais vale tarde do que nunca. Rabo de Peixe ép. 3-4 + bilan
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bilan-2026-11-29@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261129T140000
 DTEND:20261129T142000
 SUMMARY:Bilan de la semaine 6
@@ -821,23 +821,23 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-11-30@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261130
-DTEND;VALUE=DATE:20261201
+DTSTAMP:20261022T175215Z
+DTSTART:20261130T120000
+DTEND:20261130T123000
 SUMMARY:Vamos lá! Futuro do conjuntivo
 DESCRIPTION:Semaine 7 — Futuro do conjuntivo et lecture littéraire\nLund
  i :\n• Grammaire : futuro do conjuntivo\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Vamos lá! Futuro do conjuntivo
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-01@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261201
-DTEND;VALUE=DATE:20261202
+DTSTAMP:20261022T175215Z
+DTSTART:20261201T120000
+DTEND:20261201T123000
 SUMMARY:Força! Écoute + 10 adjectifs C1
 DESCRIPTION:Semaine 7 — Futuro do conjuntivo et lecture littéraire\nMard
  i :\n• Écoute + shadowing\n• 10 adjectifs C1 (pertinente\, viável\, 
@@ -845,14 +845,14 @@ DESCRIPTION:Semaine 7 — Futuro do conjuntivo et lecture littéraire\nMard
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Força! Écoute + 10 adjectifs C1
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-02@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261202
-DTEND;VALUE=DATE:20261203
+DTSTAMP:20261022T175215Z
+DTSTART:20261202T120000
+DTEND:20261202T123000
 SUMMARY:Hoje é dia de português. Cours 1 — tes projets avec quando et s
  e
 DESCRIPTION:Semaine 7 — Futuro do conjuntivo et lecture littéraire\nMerc
@@ -862,12 +862,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Hoje é dia de português. Cours 1 — tes projets avec quando 
  et se
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cours1-2026-12-02@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261202T190000
 DTEND:20261202T195000
 SUMMARY:Cours 1 avec Fábio
@@ -880,9 +880,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-03@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261203
-DTEND;VALUE=DATE:20261204
+DTSTAMP:20261022T175215Z
+DTSTART:20261203T120000
+DTEND:20261203T123000
 SUMMARY:Devagar se vai ao longe. Nouvelle de Sophia de Mello Breyner
 DESCRIPTION:Semaine 7 — Futuro do conjuntivo et lecture littéraire\nJeud
  i :\n• Lire une nouvelle de Sophia de Mello Breyner (Contos Exemplares)\
@@ -890,28 +890,28 @@ DESCRIPTION:Semaine 7 — Futuro do conjuntivo et lecture littéraire\nJeud
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Devagar se vai ao longe. Nouvelle de Sophia de Mello Breyner
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-04@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
+DTSTAMP:20261022T175215Z
+DTSTART:20261204T120000
+DTEND:20261204T123000
 SUMMARY:Passo a passo! Résumé de la nouvelle (200 mots)
 DESCRIPTION:Semaine 7 — Futuro do conjuntivo et lecture littéraire\nVend
  redi :\n• Résumé de la nouvelle (200 mots)\n• Relecture LanguageTool
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Passo a passo! Résumé de la nouvelle (200 mots)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-05@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261205
-DTEND;VALUE=DATE:20261206
+DTSTAMP:20261022T175215Z
+DTSTART:20261205T120000
+DTEND:20261205T123000
 SUMMARY:Quem não arrisca não petisca. Appel famille : « Quando eu for a 
  Portugal... »
 DESCRIPTION:Semaine 7 — Futuro do conjuntivo et lecture littéraire\nSame
@@ -921,26 +921,26 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Quem não arrisca não petisca. Appel famille : « Quando eu fo
  r a Portugal... »
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-06@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261206
-DTEND;VALUE=DATE:20261207
+DTSTAMP:20261022T175215Z
+DTSTART:20261206T120000
+DTEND:20261206T123000
 SUMMARY:Mais vale tarde do que nunca. Rabo de Peixe ou Glória + bilan
 DESCRIPTION:Semaine 7 — Futuro do conjuntivo et lecture littéraire\nDima
  nche :\n• Rabo de Peixe ou Glória\n• Bilan de la semaine
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Mais vale tarde do que nunca. Rabo de Peixe ou Glória + bilan
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bilan-2026-12-06@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261206T140000
 DTEND:20261206T142000
 SUMMARY:Bilan de la semaine 7
@@ -954,9 +954,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-07@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261207
-DTEND;VALUE=DATE:20261208
+DTSTAMP:20261022T175215Z
+DTSTART:20261207T120000
+DTEND:20261207T123000
 SUMMARY:Vamos lá! Test blanc cette semaine · Infinitivo pessoal
 DESCRIPTION:Semaine 8 — Infinitivo pessoal\, argumentation\, bilan de pha
  se\nLundi :\n• Grammaire : infinitivo pessoal (para fazermos\, antes de 
@@ -964,14 +964,14 @@ DESCRIPTION:Semaine 8 — Infinitivo pessoal\, argumentation\, bilan de pha
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Vamos lá! Test blanc cette semaine · Infinitivo pessoal
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-08@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261208
-DTEND;VALUE=DATE:20261209
+DTSTAMP:20261022T175215Z
+DTSTART:20261208T120000
+DTEND:20261208T123000
 SUMMARY:Força! Débat RTP Play + connecteurs
 DESCRIPTION:Semaine 8 — Infinitivo pessoal\, argumentation\, bilan de pha
  se\nMardi :\n• Débat sur RTP Play\n• Connecteurs : dado que\, ainda q
@@ -979,14 +979,14 @@ DESCRIPTION:Semaine 8 — Infinitivo pessoal\, argumentation\, bilan de pha
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Força! Débat RTP Play + connecteurs
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-09@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261209
-DTEND;VALUE=DATE:20261210
+DTSTAMP:20261022T175215Z
+DTSTART:20261209T120000
+DTEND:20261209T123000
 SUMMARY:Hoje é dia de português. Cours 1 — débat pour/contre le télé
  travail
 DESCRIPTION:Semaine 8 — Infinitivo pessoal\, argumentation\, bilan de pha
@@ -996,12 +996,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Hoje é dia de português. Cours 1 — débat pour/contre le t
  élétravail
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cours1-2026-12-09@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261209T190000
 DTEND:20261209T195000
 SUMMARY:Cours 1 avec Fábio
@@ -1014,9 +1014,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-10@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261210
-DTEND;VALUE=DATE:20261211
+DTSTAMP:20261022T175215Z
+DTSTART:20261210T120000
+DTEND:20261210T123000
 SUMMARY:Devagar se vai ao longe. 2 articles opposés sur le même sujet
 DESCRIPTION:Semaine 8 — Infinitivo pessoal\, argumentation\, bilan de pha
  se\nJeudi :\n• 2 articles opposés sur le même sujet\n• Carnet de mot
@@ -1024,14 +1024,14 @@ DESCRIPTION:Semaine 8 — Infinitivo pessoal\, argumentation\, bilan de pha
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Devagar se vai ao longe. 2 articles opposés sur le même sujet
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-11@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261212
+DTSTAMP:20261022T175215Z
+DTSTART:20261211T120000
+DTEND:20261211T123000
 SUMMARY:Passo a passo! Texte argumentatif sur le télétravail (250 mots)
 DESCRIPTION:Semaine 8 — Infinitivo pessoal\, argumentation\, bilan de pha
  se\nVendredi :\n• Texte argumentatif sur le télétravail (250 mots)\n
@@ -1040,14 +1040,14 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Passo a passo! Texte argumentatif sur le télétravail (250 mot
  s)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-12@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261212
-DTEND;VALUE=DATE:20261213
+DTSTAMP:20261022T175215Z
+DTSTART:20261212T120000
+DTEND:20261212T123000
 SUMMARY:Quem não arrisca não petisca. Appel famille : débattre d'un suje
  t d'actualité
 DESCRIPTION:Semaine 8 — Infinitivo pessoal\, argumentation\, bilan de pha
@@ -1057,26 +1057,26 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Quem não arrisca não petisca. Appel famille : débattre d'un 
  sujet d'actualité
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-13@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261213
-DTEND;VALUE=DATE:20261214
+DTSTAMP:20261022T175215Z
+DTSTART:20261213T120000
+DTEND:20261213T123000
 SUMMARY:Mais vale tarde do que nunca. Bilan de phase (S4 vs S8)
 DESCRIPTION:Semaine 8 — Infinitivo pessoal\, argumentation\, bilan de pha
  se\nDimanche :\n• Comparer S4 et S8\n• Bilan de phase
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Mais vale tarde do que nunca. Bilan de phase (S4 vs S8)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bilan-2026-12-13@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261213T140000
 DTEND:20261213T142000
 SUMMARY:Bilan de phase (semaine 8)
@@ -1090,23 +1090,23 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-14@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261214
-DTEND;VALUE=DATE:20261215
+DTSTAMP:20261022T175215Z
+DTSTART:20261214T120000
+DTEND:20261214T123000
 SUMMARY:Vamos lá! Perfeito composto\, mais-que-perfeito
 DESCRIPTION:Semaine 9 — Temps composés et niveaux de langue\nLundi :\n
  • Grammaire : perfeito composto\, mais-que-perfeito\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Vamos lá! Perfeito composto\, mais-que-perfeito
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-15@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261215
-DTEND;VALUE=DATE:20261216
+DTSTAMP:20261022T175215Z
+DTSTART:20261215T120000
+DTEND:20261215T123000
 SUMMARY:Força! Écoute + tableau des registres
 DESCRIPTION:Semaine 9 — Temps composés et niveaux de langue\nMardi :\n
  • Écoute + shadowing\n• Tableau familier/neutre/soutenu (5 lignes)\n
@@ -1114,14 +1114,14 @@ DESCRIPTION:Semaine 9 — Temps composés et niveaux de langue\nMardi :\n
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Força! Écoute + tableau des registres
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-16@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261216
-DTEND;VALUE=DATE:20261217
+DTSTAMP:20261022T175215Z
+DTSTART:20261216T120000
+DTEND:20261216T123000
 SUMMARY:Hoje é dia de português. Cours 1 — reformuler 5 phrases dans le
  s 3 registres
 DESCRIPTION:Semaine 9 — Temps composés et niveaux de langue\nMercredi :\
@@ -1131,12 +1131,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Hoje é dia de português. Cours 1 — reformuler 5 phrases dan
  s les 3 registres
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cours1-2026-12-16@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261216T190000
 DTEND:20261216T195000
 SUMMARY:Cours 1 avec Fábio
@@ -1150,9 +1150,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-17@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261217
-DTEND;VALUE=DATE:20261218
+DTSTAMP:20261022T175215Z
+DTSTART:20261217T120000
+DTEND:20261217T123000
 SUMMARY:Devagar se vai ao longe. 2 crónicas
 DESCRIPTION:Semaine 9 — Temps composés et niveaux de langue\nJeudi :\n
  • 2 crónicas (Ricardo Araújo Pereira ou Miguel Esteves Cardoso)\n• C
@@ -1160,14 +1160,14 @@ DESCRIPTION:Semaine 9 — Temps composés et niveaux de langue\nJeudi :\n
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Devagar se vai ao longe. 2 crónicas
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-18@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261218
-DTEND;VALUE=DATE:20261219
+DTSTAMP:20261022T175215Z
+DTSTART:20261218T120000
+DTEND:20261218T123000
 SUMMARY:Passo a passo! Ta crónica : la vie en France vue par un Portugais 
  (250 mots)
 DESCRIPTION:Semaine 9 — Temps composés et niveaux de langue\nVendredi :\
@@ -1177,14 +1177,14 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Passo a passo! Ta crónica : la vie en France vue par un Portug
  ais (250 mots)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-19@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261219
-DTEND;VALUE=DATE:20261220
+DTSTAMP:20261022T175215Z
+DTSTART:20261219T120000
+DTEND:20261219T123000
 SUMMARY:Quem não arrisca não petisca. Appel famille : « O que tens andad
  o a fazer? »
 DESCRIPTION:Semaine 9 — Temps composés et niveaux de langue\nSamedi :\n
@@ -1194,26 +1194,26 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Quem não arrisca não petisca. Appel famille : « O que tens a
  ndado a fazer? »
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-20@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261220
-DTEND;VALUE=DATE:20261221
+DTSTAMP:20261022T175215Z
+DTSTART:20261220T120000
+DTEND:20261220T123000
 SUMMARY:Mais vale tarde do que nunca. Tabu (Miguel Gomes) + bilan
 DESCRIPTION:Semaine 9 — Temps composés et niveaux de langue\nDimanche :\
  n• Film Tabu (Miguel Gomes)\n• Bilan de la semaine
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Mais vale tarde do que nunca. Tabu (Miguel Gomes) + bilan
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bilan-2026-12-20@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261220T140000
 DTEND:20261220T142000
 SUMMARY:Bilan de la semaine 9
@@ -1227,37 +1227,37 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-21@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261221
-DTEND;VALUE=DATE:20261222
+DTSTAMP:20261022T175215Z
+DTSTART:20261221T120000
+DTEND:20261221T123000
 SUMMARY:Vamos lá! Voix passive\, se impersonnel
 DESCRIPTION:Semaine 10 — Voix passive et synthèse\nLundi :\n• Grammair
  e : voix passive\, se impersonnel\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Vamos lá! Voix passive\, se impersonnel
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-22@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261222
-DTEND;VALUE=DATE:20261223
+DTSTAMP:20261022T175215Z
+DTSTART:20261222T120000
+DTEND:20261222T123000
 SUMMARY:Força! Écoute + 10 mots de mes études
 DESCRIPTION:Semaine 10 — Voix passive et synthèse\nMardi :\n• Écoute 
  + shadowing\n• 10 mots d'un thème de mes études\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Força! Écoute + 10 mots de mes études
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-23@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261223
-DTEND;VALUE=DATE:20261224
+DTSTAMP:20261022T175215Z
+DTSTART:20261223T120000
+DTEND:20261223T123000
 SUMMARY:Hoje é dia de português. Cours 1 — exposé de 3 min sur mes ét
  udes
 DESCRIPTION:Semaine 10 — Voix passive et synthèse\nMercredi :\n• Prép
@@ -1267,12 +1267,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Hoje é dia de português. Cours 1 — exposé de 3 min sur mes
   études
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cours1-2026-12-23@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261223T190000
 DTEND:20261223T195000
 SUMMARY:Cours 1 avec Fábio
@@ -1285,9 +1285,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-24@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261224
-DTEND;VALUE=DATE:20261225
+DTSTAMP:20261022T175215Z
+DTSTART:20261224T120000
+DTEND:20261224T123000
 SUMMARY:Devagar se vai ao longe. Nouvelle de Mia Couto
 DESCRIPTION:Semaine 10 — Voix passive et synthèse\nJeudi :\n• Lire une
   nouvelle de Mia Couto (Estórias Abensonhadas)\n• Carnet de mots\n• A
@@ -1295,28 +1295,28 @@ DESCRIPTION:Semaine 10 — Voix passive et synthèse\nJeudi :\n• Lire une
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Devagar se vai ao longe. Nouvelle de Mia Couto
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-25@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261225
-DTEND;VALUE=DATE:20261226
+DTSTAMP:20261022T175215Z
+DTSTART:20261225T120000
+DTEND:20261225T123000
 SUMMARY:Passo a passo! Synthèse de 2 articles (250 mots)
 DESCRIPTION:Semaine 10 — Voix passive et synthèse\nVendredi :\n• Synth
  èse de 2 articles (250 mots)\n• Relecture LanguageTool
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Passo a passo! Synthèse de 2 articles (250 mots)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-26@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261226
-DTEND;VALUE=DATE:20261227
+DTSTAMP:20261022T175215Z
+DTSTART:20261226T120000
+DTEND:20261226T123000
 SUMMARY:Quem não arrisca não petisca. Appel famille : expliquer mes étud
  es
 DESCRIPTION:Semaine 10 — Voix passive et synthèse\nSamedi :\n• Appel f
@@ -1325,26 +1325,26 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Quem não arrisca não petisca. Appel famille : expliquer mes 
  études
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-27@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261227
-DTEND;VALUE=DATE:20261228
+DTSTAMP:20261022T175215Z
+DTSTART:20261227T120000
+DTEND:20261227T123000
 SUMMARY:Mais vale tarde do que nunca. Série en VO + bilan
 DESCRIPTION:Semaine 10 — Voix passive et synthèse\nDimanche :\n• Séri
  e en VO\n• Bilan de la semaine
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Mais vale tarde do que nunca. Série en VO + bilan
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bilan-2026-12-27@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261227T140000
 DTEND:20261227T142000
 SUMMARY:Bilan de la semaine 10
@@ -1358,37 +1358,37 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-28@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261228
-DTEND;VALUE=DATE:20261229
+DTSTAMP:20261022T175215Z
+DTSTART:20261228T120000
+DTEND:20261228T123000
 SUMMARY:Vamos lá! Discours indirect
 DESCRIPTION:Semaine 11 — Discours indirect et proverbes\nLundi :\n• Gra
  mmaire : discours indirect\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Vamos lá! Discours indirect
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-29@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261229
-DTEND;VALUE=DATE:20261230
+DTSTAMP:20261022T175215Z
+DTSTART:20261229T120000
+DTEND:20261229T123000
 SUMMARY:Força! Écoute + 5 proverbes
 DESCRIPTION:Semaine 11 — Discours indirect et proverbes\nMardi :\n• Éc
  oute + shadowing\n• 5 proverbes\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Força! Écoute + 5 proverbes
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-30@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261230
-DTEND;VALUE=DATE:20261231
+DTSTAMP:20261022T175215Z
+DTSTART:20261230T120000
+DTEND:20261230T123000
 SUMMARY:Hoje é dia de português. Cours 1 — rapporter une conversation e
  ntendue
 DESCRIPTION:Semaine 11 — Discours indirect et proverbes\nMercredi :\n• 
@@ -1398,12 +1398,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Hoje é dia de português. Cours 1 — rapporter une conversati
  on entendue
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cours1-2026-12-30@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20261230T190000
 DTEND:20261230T195000
 SUMMARY:Cours 1 avec Fábio
@@ -1416,23 +1416,23 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2026-12-31@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20261231
-DTEND;VALUE=DATE:20270101
+DTSTAMP:20261022T175215Z
+DTSTART:20261231T120000
+DTEND:20261231T123000
 SUMMARY:Devagar se vai ao longe. Suite de Mia Couto ou autre nouvelle
 DESCRIPTION:Semaine 11 — Discours indirect et proverbes\nJeudi :\n• Sui
  te de Mia Couto ou autre nouvelle\n• Carnet de mots\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Devagar se vai ao longe. Suite de Mia Couto ou autre nouvelle
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2027-01-01@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20270101
-DTEND;VALUE=DATE:20270102
+DTSTAMP:20261022T175215Z
+DTSTART:20270101T120000
+DTEND:20270101T123000
 SUMMARY:Passo a passo! Conversation familiale au discours indirect (200 mot
  s)
 DESCRIPTION:Semaine 11 — Discours indirect et proverbes\nVendredi :\n• 
@@ -1442,14 +1442,14 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Passo a passo! Conversation familiale au discours indirect (200
   mots)
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2027-01-02@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20270102
-DTEND;VALUE=DATE:20270103
+DTSTAMP:20261022T175215Z
+DTSTART:20270102T120000
+DTEND:20270102T123000
 SUMMARY:Quem não arrisca não petisca. Appel famille : leurs souvenirs du 
  25 avril 1974
 DESCRIPTION:Semaine 11 — Discours indirect et proverbes\nSamedi :\n• Ap
@@ -1458,26 +1458,26 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Quem não arrisca não petisca. Appel famille : leurs souvenirs
   du 25 avril 1974
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2027-01-03@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20270103
-DTEND;VALUE=DATE:20270104
+DTSTAMP:20261022T175215Z
+DTSTART:20270103T120000
+DTEND:20270103T123000
 SUMMARY:Mais vale tarde do que nunca. Capitães de Abril + bilan
 DESCRIPTION:Semaine 11 — Discours indirect et proverbes\nDimanche :\n• 
  Film Capitães de Abril\n• Bilan de la semaine
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Mais vale tarde do que nunca. Capitães de Abril + bilan
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bilan-2027-01-03@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20270103T140000
 DTEND:20270103T142000
 SUMMARY:Bilan de la semaine 11
@@ -1491,9 +1491,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2027-01-04@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20270104
-DTEND;VALUE=DATE:20270105
+DTSTAMP:20261022T175215Z
+DTSTART:20270104T120000
+DTEND:20270104T123000
 SUMMARY:Vamos lá! Test blanc cette semaine · Relire tout le journal d'err
  eurs
 DESCRIPTION:Semaine 12 — Révision et bilan final\nLundi :\n• Relire to
@@ -1502,28 +1502,28 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Vamos lá! Test blanc cette semaine · Relire tout le journal d
  'erreurs
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2027-01-05@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20270105
-DTEND;VALUE=DATE:20270106
+DTSTAMP:20261022T175215Z
+DTSTART:20270105T120000
+DTEND:20270105T123000
 SUMMARY:Força! Test blanc DIPLE : compréhension orale
 DESCRIPTION:Semaine 12 — Révision et bilan final\nMardi :\n• Test blan
  c DIPLE : compréhension orale\n• Anki 10 min
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Força! Test blanc DIPLE : compréhension orale
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2027-01-06@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20270106
-DTEND;VALUE=DATE:20270107
+DTSTAMP:20261022T175215Z
+DTSTART:20270106T120000
+DTEND:20270106T123000
 SUMMARY:Hoje é dia de português. Cours 1 — simulation de l'oral DIPLE
 DESCRIPTION:Semaine 12 — Révision et bilan final\nMercredi :\n• Prépa
  rer : oral DIPLE\n• Cours avec Fábio + fiche remplie
@@ -1531,12 +1531,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Hoje é dia de português. Cours 1 — simulation de l'oral DIP
  LE
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cours1-2027-01-06@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20270106T190000
 DTEND:20270106T195000
 SUMMARY:Cours 1 avec Fábio
@@ -1549,9 +1549,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2027-01-07@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20270107
-DTEND;VALUE=DATE:20270108
+DTSTAMP:20261022T175215Z
+DTSTART:20270107T120000
+DTEND:20270107T123000
 SUMMARY:Devagar se vai ao longe. Test blanc DIPLE : compréhension écrite 
  + roman court
 DESCRIPTION:Semaine 12 — Révision et bilan final\nJeudi :\n• Test blan
@@ -1561,28 +1561,28 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Devagar se vai ao longe. Test blanc DIPLE : compréhension écr
  ite + roman court
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2027-01-08@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20270108
-DTEND;VALUE=DATE:20270109
+DTSTAMP:20261022T175215Z
+DTSTART:20270108T120000
+DTEND:20270108T123000
 SUMMARY:Passo a passo! Test blanc DIPLE : production écrite
 DESCRIPTION:Semaine 12 — Révision et bilan final\nVendredi :\n• Test b
  lanc DIPLE : production écrite
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Passo a passo! Test blanc DIPLE : production écrite
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2027-01-09@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20270109
-DTEND;VALUE=DATE:20270110
+DTSTAMP:20261022T175215Z
+DTSTART:20270109T120000
+DTEND:20270109T123000
 SUMMARY:Quem não arrisca não petisca. Conversation libre de 30 min avec l
  a famille\, enregistrée
 DESCRIPTION:Semaine 12 — Révision et bilan final\nSamedi :\n• Conversa
@@ -1591,14 +1591,14 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Quem não arrisca não petisca. Conversation libre de 30 min av
  ec la famille\, enregistrée
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:jour-2027-01-10@pt-diario
-DTSTAMP:20261022T173336Z
-DTSTART;VALUE=DATE:20270110
-DTEND;VALUE=DATE:20270111
+DTSTAMP:20261022T175215Z
+DTSTART:20270110T120000
+DTEND:20270110T123000
 SUMMARY:Mais vale tarde do que nunca. Bilan final (S1 vs S12) + objectif de
  s 3 mois suivants
 DESCRIPTION:Semaine 12 — Révision et bilan final\nDimanche :\n• Compar
@@ -1607,12 +1607,12 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Mais vale tarde do que nunca. Bilan final (S1 vs S12) + objecti
  f des 3 mois suivants
-TRIGGER:PT20H
+TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bilan-2027-01-10@pt-diario
-DTSTAMP:20261022T173336Z
+DTSTAMP:20261022T175215Z
 DTSTART:20270110T140000
 DTEND:20270110T142000
 SUMMARY:Bilan de phase (semaine 12)
