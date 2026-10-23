@@ -181,3 +181,26 @@ describe('exercices', () => {
     expect(s3).toHaveLength(10)
   })
 })
+
+describe('notes de cours', () => {
+  it('repère cartes, fautes et sections comme dans le carnet', async () => {
+    const { parseNotes } = await import('./lessonNotes')
+    const p = parseNotes(`Comboio = train
+- mais bom ✗ → melhor (comparatif irrégulier)
+fazer uma visita -> visitar : calque du français
+# Grammaire
+-ámos au perfeito des verbes en -ar
+à tarde ≠ tarde
+Vocabulaire :
+• alugar = louer`)
+    expect(p.cards).toEqual([
+      { front: 'train', back: 'Comboio' },
+      { front: 'louer', back: 'alugar' },
+    ])
+    expect(p.errors).toEqual([
+      { wrote: 'mais bom', correction: 'melhor', rule: 'comparatif irrégulier' },
+      { wrote: 'fazer uma visita', correction: 'visitar', rule: 'calque du français' },
+    ])
+    expect(p.sections).toEqual([{ title: 'Grammaire', items: ['-ámos au perfeito des verbes en -ar', 'à tarde ≠ tarde'] }])
+  })
+})

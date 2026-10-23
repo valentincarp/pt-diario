@@ -54,6 +54,18 @@ Pour ajouter ou corriger des exercices, modifie `src/exercises.json` :
 - `tenses` : un temps (`name`), les semaines où il est travaillé (`weeks`) et ses verbes, chacun avec 5 formes (eu, tu, ele/ela, nós, eles/elas) ;
 - `sentences` : une consigne (`prompt`), la ou les réponses acceptées (`answers`), la règle (`rule`) et les semaines (`weeks`).
 
+## Cours avec Fábio : fiche structurée
+
+Plus → Cours avec Fábio → « Nouvelle fiche ». Dans l'onglet **Notes**, écris librement ce que tu as préparé et ce que vous avez vu, avec trois raccourcis :
+
+```
+comboio = train                  → carte (portugais = français)
+mais bom → melhor (comparatif)   → faute (faux → correct, règle entre parenthèses ou après « : »)
+# Grammaire   ou   Grammaire :   → nouvelle section
+```
+
+Le bouton **✨ Structurer** crée les cartes dans le paquet « Cours avec Fábio » et ajoute les fautes au journal, rattachées au cours. Tu peux le relancer après chaque ajout : il ne crée jamais de doublon. L'onglet **Fiche structurée** montre le cours rangé par sections, avec le vocabulaire et les fautes corrigées. C'est une lecture par règles simples, pas une IA : une ligne qui ne suit pas ces raccourcis reste une note.
+
 ## Installer l'appli sur l'iPhone
 
 Une PWA doit être servie en **HTTPS** pour fonctionner hors ligne. L'appli n'a pas de serveur : il suffit d'un hébergement de fichiers statiques gratuit. Exemple avec GitHub Pages :
@@ -111,7 +123,7 @@ src/plan.json        le plan (modifiable)
 src/exercises.json   conjugaisons et phrases des exercices (modifiable)
 src/calendar.json    horaires et début du calendrier publié (et réglages de départ de l'appli)
 src/types.ts         types du plan et des données
-src/logic/           logique pure et testée : dates, plan, streak, cards, exercises, ics (+ logic.test.ts)
+src/logic/           logique pure et testée : dates, plan, streak, cards, exercises, lessonNotes, ics (+ logic.test.ts)
 src/store.ts         état (zustand) sauvegardé dans IndexedDB, export/import
 src/seed.ts          données de départ (paquet S1 + carnet)
 src/screens/         Aujourd'hui, Cartes (+ session), Exercices (+ écriture), Journal, Plus, Fábio, Bilans, Réglages

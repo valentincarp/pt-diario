@@ -6,6 +6,8 @@ import { today } from './logic/dates'
 import { emptyFsrs, grade } from './logic/cards'
 import { isAnki, isDone, positionOf, shiftedStart, taskFor, taskKey } from './logic/plan'
 import { initialData } from './seed'
+import { parseNotes } from './logic/lessonNotes'
+import { normalize } from './logic/exercises'
 import type { CardItem, Data, DayLog, ErrorEntry, Lesson, PhaseReview, Pos, Settings, TextEntry, WeeklyReview } from './types'
 
 const uid = () => crypto.randomUUID()
@@ -27,6 +29,8 @@ type Actions = {
   setPhase: (phase: number, p: PhaseReview) => void
   setSettings: (patch: Partial<Settings>) => void
   shiftPlan: (toWeek: number) => void
+  /** Crée les cartes et les fautes trouvées dans les notes d'un cours (sans doublon : relançable). */
+  importLessonNotes: (lessonId: string) => { cards: number; errors: number }
   saveText: (t: Omit<TextEntry, 'id'> & { id?: string }) => string
   deleteText: (id: string) => void
   replaceData: (d: Data) => void
@@ -146,6 +150,27 @@ export const useStore = create<Store>()(
             shifts: [...s.shifts, { date: d, fromWeek, toWeek }],
           }
         }),
+
+      importLessonNotes: (lessonId) => {
+        const s = getState()
+        const l = s.lessons.find((x) => x.id === lessonId)
+        if (!l) return { cards: 0, errors: 0 }
+        const notes = parseNotes(`${l.prepared}\n${l.seen}`)
+        const known = new Set(s.cards.map((c) => normalize(c.back)))
+        const cards = notes.cards.filter((c) => !known.has(normalize(c.back)))
+        const errKey = (e: { wrote: string; correction: string }) => `${normalize(e.wrote)}|${normalize(e.correction)}`
+        const knownErr = new Set(s.errors.filter((e) => e.lessonId === lessonId).map(errKey))
+        const errors = notes.errors.filter((e) => !knownErr.has(errKey(e)))
+        const deckId = cards.length ? s.addDeck('Cours avec Fábio') : ''
+        setState((st) => ({
+          cards: [...st.cards, ...cards.map((c) => ({ ...c, note: `Cours du ${l.date}`, deckId, id: uid(), fsrs: emptyFsrs(), createdAt: today() }))],
+          errors: [
+            ...errors.map((e) => ({ ...e, rule: e.rule || 'Cours avec Fábio', id: uid(), date: l.date, source: 'cours' as const, lessonId })),
+            ...st.errors,
+          ],
+        }))
+        return { cards: cards.length, errors: errors.length }
+      },
 
       saveText: (t) => {
         const id = t.id ?? uid()
